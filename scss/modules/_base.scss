@@ -1,0 +1,115 @@
+@font-face { 
+	font-family: $default_regular; 
+	src: url('fonts/biko_regular.otf'); 
+	font-weight: 400; 
+	font-style: normal; 
+}
+
+@font-face { 
+	font-family: $default_bold; 
+	src: url('fonts/biko_bold.otf'); 
+	font-weight: 700; 
+	font-style: normal; 
+}
+
+@font-face { 
+	font-family: $default_light; 
+	src: url('fonts/biko_light.otf'); 
+	font-weight: 300; 
+	font-style: normal; 
+}
+
+@font-face { 
+	font-family: $script; 
+	src: url('fonts/lakesight.ttf'); 
+	font-weight: 400; 
+	font-style: normal; 
+}
+
+html{
+	font-size: $default_font_size;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	cursor: default;
+	background: $background; 
+	color: white;
+	box-sizing: border-box;
+	font-family: $default_regular;
+	font-weight: 400; 
+	font-style: normal;
+}
+
+ul{
+	list-style: none;
+}
+
+.clear{
+	clear: both;
+	height: 0;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.highlight{
+	text-decoration: underline;
+}
+
+.primary-light{
+	color: $primary_light;
+}
+
+.secondary-light{
+	color: $secondary_light;
+}
+
+.header{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 56px;
+	padding: $positive_10 0 $positive_8 0;
+	font-size: 1rem;
+	background: url('img/header_small.png') center -6% no-repeat fixed;
+	z-index: 1;
+	overflow: hidden;
+}
+
+//640px
+@media screen and (min-width: 40em){
+	.header{
+		background: url('img/header_large.png') center -6% no-repeat fixed;
+	}
+}
+
+.overlay{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 2px;
+	left: 0;
+	background: $background;
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgoKPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzExMSI+PC9yZWN0Pgo8L3N2Zz4=") 0 0 repeat;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.header-text{
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+	z-index: 2;
+	min-height: 208px;
+	p{
+		line-height: $positive_5;
+	}
+}
+
+@import 'forms', 'buttons', 'navigation';
