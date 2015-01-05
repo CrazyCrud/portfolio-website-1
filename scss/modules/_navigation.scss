@@ -11,7 +11,6 @@
 .top-bar{
 	height: 56px;
 	background: white;
-	border-bottom: 0px solid $grey_dark;
 	line-height: 56px;
 	overflow: hidden;
 }
@@ -65,7 +64,6 @@
 
 		li{
 			display: block;
-			//background: $grey_light;
 			color: $black;
 			border-top: 1px solid #d9d9d9;
 			a{
@@ -73,6 +71,92 @@
 				padding-left: $positive_1;
 				color: $black;
 				text-decoration: none;
+			}
+		}
+
+		li:hover{
+			background-color: $primary_dark;
+			a{
+				color: white;
+			}
+		}
+
+		li.divider{
+			height: 0;
+			width: 0;
+			display: none;
+		}
+	}
+}
+
+.csstransitions .top-bar-section{
+	ul{
+		li{
+			transition: all 0.2s;
+
+			a{
+				transition: color 0.4s;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $navigation_breakpoint){
+	.top-bar{
+		height: 68px;
+		line-height: 68px;
+	}
+	.top-bar-section{
+		text-align: center;
+		ul{
+			display: inline-block;
+			width: auto;
+			max-width: 700px;
+			li, li.divider{
+				display: block;
+				float: left;
+				border: none;
+				a{
+					display: block;
+					padding: 0 $positive_2;
+					color: $grey_dark;
+					text-decoration: none;
+				}
+			}
+			li:hover{
+				background: none;
+				border-top: 2px solid $primary_dark;
+				a{
+					color: $primary_dark;
+				}
+			}
+			li.divider:hover{
+				background-color: white;
+				border: none;
+			}
+			li.divider{
+				width: $positive_6;
+				height: 68px;
+			}
+		}
+	}
+	.title-bar{
+		display: block;
+		position: relative;
+		height: 0;
+
+		.toggle-nav{
+			width: 0;
+			height: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $skills_breakpoint){
+	.top-bar-section{
+		ul{
+			li.divider{
+				width: $positive_10;
 			}
 		}
 	}

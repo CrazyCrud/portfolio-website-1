@@ -16,14 +16,14 @@
 	color: $primary_light;
 }
 
-/*
-.csstransforms .headline{
-	transform: rotate(-14deg);
-}
-*/
-
 .skills, .about, .contact{
 	padding: 0 $positive_1;
+}
+
+@media screen and (min-width: 54em){
+	.skills, .about, .contact{
+		padding: 0 $positive_4;
+	}
 }
 
 .skills, .about, .contact, .projects{
@@ -80,6 +80,22 @@
 }
 
 
+@media screen and (min-width: 58em){
+	.skills-content{
+		max-width: 1200px;
+		margin: 0 auto;
+		li{
+			display: block;
+			float: left;
+			width: 33%;
+
+			.skill-text-container{
+				padding: 0 $positive_1;
+			}
+		}
+	}
+}
+
 .projects-content-container{
 	
 }
@@ -133,7 +149,6 @@
 			width: 100%;
 			height: auto;
 			padding: $negative_2 0 $negative_2 $negative_1;
-			//background: $background;
 			z-index: 1;
 			font-size: $negative_2;
 		}
@@ -168,11 +183,16 @@
 	}
 }
 
+.about article{
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 .about-content-container{
 	text-align: center;
 
 	section{
+		display: block;
 		margin-top: $positive_6;
 		margin-bottom: $positive_4; 
 
@@ -192,6 +212,28 @@
 	width: 100%;
 }
 
+@media screen and (min-width: 54em){
+	.about-content-container{
+
+	}
+	.what{
+		display: block;
+		float: left;
+		position: relative;
+		width: 78%;
+		margin-right: 2%;
+		text-align: left;
+	}
+	.when{
+		float: left;
+		width: 20%;
+
+		p{
+			margin-top: 0.6em;
+		}
+	}
+}
+
 .when{
 	margin-bottom: $positive_4;
 	.date{
@@ -209,19 +251,53 @@
 		padding: 0;
 		border: none;
 		max-width: 1000px;
+
+		input{
+			text-overflow: ellipsis;
+		}
 	}
 
 	#name, #email, #message{
 		display: block;
 		width: 100%;
+		margin: 0;
 		margin-bottom: $positive_4;
-		color: $black;
+		color: white;
+		background-color: transparent;
+		padding: $negative_2 $positive_1 $negative_2 0;
+		border: none;
+		border-bottom: 2px solid rgba(150, 150, 150, 0.2); 
+		font-size: $positive_2;
+	}
+
+	#name:focus, #email:focus, #message:focus{
+		outline: none;
 	}
 
 	#submit{
 		display: block;
 		margin: 0 auto;
+		border: none;
+		outline: none;
 		padding: $negative_5 $positive_2;
 		color: $black;
+		font-weight: 700;
+		letter-spacing: $negative_9;
+		background: $primary_dark;
+		color: $primary_light;
+		border-radius: 7px;
+		box-shadow: 0 5px $secondary_dark;
+	}
+
+	#submit:before{
+		font-family: 'icomoon';
+		content: "\e000";
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		position: relative;
 	}
 }

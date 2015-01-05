@@ -26,6 +26,18 @@
 	font-style: normal; 
 }
 
+@font-face {
+	font-family: $icomoon;
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 html{
 	font-size: $default_font_size;
 }
@@ -36,6 +48,7 @@ body{
 	overflow-x: hidden;
 	cursor: default;
 	background: $background; 
+	background: url('img/texture.jpg') repeat;
 	color: white;
 	box-sizing: border-box;
 	font-family: $default_regular;
@@ -80,10 +93,15 @@ ul{
 	overflow: hidden;
 }
 
-//640px
-@media screen and (min-width: 40em){
+@media screen and (min-width: $header_medium){
 	.header{
 		background: url('img/header_large.png') center -6% no-repeat fixed;
+	}
+}
+
+@media screen and (min-width: $skills_breakpoint){
+	.header{
+		font-size: $positive_2;
 	}
 }
 
@@ -107,6 +125,7 @@ ul{
 	text-align: center;
 	z-index: 2;
 	min-height: 208px;
+	max-width: 1700px;
 	p{
 		line-height: $positive_5;
 	}
