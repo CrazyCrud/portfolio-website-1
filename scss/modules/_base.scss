@@ -56,6 +56,27 @@ body{
 	font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6{
+	font-family: $default_bold;
+	font-weight: 700;
+}
+
+h1{
+	font-size: $positive_4;
+}
+
+h2{
+	font-size: $positive_2;
+}
+
+h3{
+	font-size: $positive_2;
+}
+
+h4{
+	font-size: 1em;
+}
+
 ul{
 	list-style: none;
 }
@@ -70,7 +91,7 @@ ul{
 }
 
 .highlight{
-	text-decoration: underline;
+	//text-decoration: underline;
 }
 
 .primary-light{

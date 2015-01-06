@@ -1,3 +1,24 @@
+<?php
+$email = $message = $captcha = false;
+if(isset($_POST['email']) && !empty($_POST['email'])){
+	$email = htmlentities($_POST['email']);
+	if(!((strpos($field, ".") > 0) && (strpos($field, "@") > 0)) || preg_match("/[^a-zA-Z0-9.@_-]/", $email)){
+		$email = false;
+	}
+}
+
+if(isset($_POST['message']) && !empty($_POST['message'])){
+	$message = htmlentities($_POST['message']);
+}
+
+if(isset($_POST['captcha']) && !empty($_POST['captcha'])){
+	if(intval($_POST['number-1']) + intval($_POST['number-2']) == intval($total)){
+		$captcha = true;
+	}
+}
+
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -239,15 +260,26 @@
 							<h2>Your</h2>
 							<span class="headline" data-0="transform: rotate(-22deg);" data-top="transform: rotate(0);">Questions</span>
 						</header>
-							<form id="contact" name="contact" method="post">
+							<form id="contact" name="contact" method="post" action="index.php">
 								<fieldset>
 									<label for="name">What&#39;s your name?</label>
 									<input type="text" name="name" id="name">
 									<label for="email">What&#39;s your email address? <span class="required">*</span></label>
+									<?php if(isset($_POST['submit']) && $email === false){
+										echo "<label for='email' class='required-error'>Please enter a correct email address</label>";
+									} ?>
 									<input type="email" name="email" id="email">
 									<label for="message">What do you want to tell me? <span class="required">*</span></label>
+									<?php if(isset($_POST['submit']) && $message === false){
+										echo "<label for='message' class='required-error'>Please type a message</label>";
+									} ?>
 									<textarea name="message" id="message"></textarea>
-									<button id="submit" class="button uppercase">
+									<label for="captcha">What is <input size="1" disabled id="number-1" type="text" name="number-1" value="<?php echo rand(1,4);?>"> + <input size="1" disabled id="number-2" type="text" name="number-2" value="<?php echo rand(5,9);?>"> <span class="required">*</span></label>
+									<?php if(isset($_POST['submit']) && $captcha === false){
+										echo "<label for='captcha' class='required-error'>Please enter the correct number</label>";
+									} ?>
+									<input id="captcha" class="captcha" type="text" name="captcha" maxlength="2" />
+									<button id="submit" name="submit" type="submit" class="button uppercase">
 										<span class="response">Send</span>
 									</button>
 								</fieldset>

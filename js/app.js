@@ -14,7 +14,10 @@ var App = (function(){
 		submit_form: $("#submit"),
 		name_form: $("#name"),
 		email_form: $("#email"),
-		message_form: $("#message")
+		message_form: $("#message"),
+		number_1: $("#number-1"),
+		number_2: $("#number-2"),
+		captcha: $("#captcha")
 	};
 
 	this.email_regex = /^([a-zA-Z0-9_.+-]+)\@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,4})$/;
@@ -60,7 +63,8 @@ var App = (function(){
 			e.preventDefault();
 			var validMail = isValidMessage();
 			var validMessage = isValidMail();
-			if(validMail && validMessage){
+			var validCaptcha = isValidCaptcha();
+			if(validMail && validMessage && validCaptcha){
 				//that.elements.contact.find('required-error').remove();
 				that.elements.submit_form.addClass('success');
 	
@@ -101,6 +105,17 @@ var App = (function(){
 			}
 		}
 		return valid;	
+	},
+
+	isValidCaptcha = function(){
+		var isValid = (parseInt(that.elements.number_1.val()) + parseInt(that.elements.number_2.val()) == parseInt(that.elements.captcha.val()));
+		if(isValid === true){
+			that.elements.captcha.prev('.required-error').remove();
+		}else{
+			if(that.elements.captcha.prev('.required-error').length < 1){
+				that.elements.captcha.before("<label for='captcha' class='required-error'>Please enter the correct number</label>");
+			}
+		}
 	};
 
 	return {

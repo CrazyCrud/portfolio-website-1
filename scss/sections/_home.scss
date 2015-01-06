@@ -265,7 +265,7 @@
 		}
 	}
 
-	#name, #email, #message{
+	#name, #email, #message, #captcha{
 		display: block;
 		width: 100%;
 		margin: 0;
@@ -278,7 +278,14 @@
 		font-size: $positive_2;
 	}
 
-	#name:focus, #email:focus, #message:focus{
+	#number-1, #number-2{
+		text-align: center;
+		color: white;
+		background-color: transparent;
+		border: none;
+	}
+
+	#name:focus, #email:focus, #message:focus, #number-1:focus, #number-2:focus{
 		outline: none;
 	}
 
