@@ -1,20 +1,20 @@
 @font-face { 
 	font-family: $default_regular; 
-	src: url('fonts/biko_regular.otf'); 
+	src: url('fonts/steagal_regular.otf'); 
 	font-weight: 400; 
 	font-style: normal; 
 }
 
 @font-face { 
 	font-family: $default_bold; 
-	src: url('fonts/biko_bold.otf'); 
+	src: url('fonts/steagal_bold.otf'); 
 	font-weight: 700; 
 	font-style: normal; 
 }
 
 @font-face { 
 	font-family: $default_light; 
-	src: url('fonts/biko_light.otf'); 
+	src: url('fonts/steagal_light.otf'); 
 	font-weight: 300; 
 	font-style: normal; 
 }
@@ -79,6 +79,20 @@ ul{
 
 .secondary-light{
 	color: $secondary_light;
+}
+
+.required{
+	color: $primary_light;
+	font-size: $positive_2;
+	font-weight: 700;
+}
+
+.required-error{
+	display: block;
+	margin-top: $positive_1;
+	color: $primary_light;
+	font-weight: 300;
+	font-size: $negative_2;
 }
 
 .header{

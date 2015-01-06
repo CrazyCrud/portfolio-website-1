@@ -214,22 +214,26 @@
 
 @media screen and (min-width: 54em){
 	.about-content-container{
+		section {
+			p{
+				line-height: $positive_5;
+			}
+		}
+		.what{
+			display: block;
+			float: left;
+			position: relative;
+			width: 78%;
+			margin-right: 2%;
+			text-align: left;
+		}
+		.when{
+			float: left;
+			width: 20%;
 
-	}
-	.what{
-		display: block;
-		float: left;
-		position: relative;
-		width: 78%;
-		margin-right: 2%;
-		text-align: left;
-	}
-	.when{
-		float: left;
-		width: 20%;
-
-		p{
-			margin-top: 0.6em;
+			p{
+				margin-top: 0.6em;
+			}
 		}
 	}
 }
@@ -255,6 +259,10 @@
 		input{
 			text-overflow: ellipsis;
 		}
+
+		label{
+			position: relative;
+		}
 	}
 
 	#name, #email, #message{
@@ -274,12 +282,12 @@
 		outline: none;
 	}
 
-	#submit{
+	.button{
 		display: block;
 		margin: 0 auto;
 		border: none;
 		outline: none;
-		padding: $negative_5 $positive_2;
+		padding: 15px 25px 15px 63px;
 		color: $black;
 		font-weight: 700;
 		letter-spacing: $negative_9;
@@ -287,9 +295,11 @@
 		color: $primary_light;
 		border-radius: 7px;
 		box-shadow: 0 5px $secondary_dark;
+		position: relative;
 	}
 
-	#submit:before{
+	.button:before{
+		color: $primary_light;
 		font-family: 'icomoon';
 		content: "\e000";
 		speak: none;
@@ -298,6 +308,16 @@
 		font-variant: normal;
 		text-transform: none;
 		line-height: 1;
-		position: relative;
+		position: absolute;
+		left: 0;
+		width: 40%;
+	}
+
+	.button.success:before{
+		content: "\e001";
+	}
+
+	.button.error:before{
+		content: "\e002";
 	}
 }
