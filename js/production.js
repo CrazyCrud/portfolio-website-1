@@ -187,30 +187,50 @@
 	activateForm = function(){
 		that.elements.submit_form.bind("tap", function(e){
 			e.preventDefault();
-			var validMail = isValidMessage();
-			var validMessage = isValidMail();
-			var validCaptcha = isValidCaptcha();
+			var email = that.email_regex.test($.trim(that.elements.email_form.val()));
+			var message = $.trim(that.elements.message_form.val());
+			var number_1 = that.elements.number_1.val();
+			var number_2 = that.elements.number_2.val();
+			var captcha = that.elements.captcha.val();
+			var validMail = isValidMail(email);
+			var validMessage = isValidMessage(message);
+			var validCaptcha = isValidCaptcha(number_1, number_2, captcha);
+			
 			if(validMail && validMessage && validCaptcha){
-				//that.elements.contact.find('required-error').remove();
 				that.elements.submit_form.addClass('success');
-	
+				that.elements.submit_form.children('.response').html('Success');
+				$.ajax({
+					url: 'php/send_mail.php',
+					type: 'POST',
+					dataType: 'json',
+					data: 'email=' + email + '&message=' + message + '&number-1=' + number_1 + '&number-2=' + number_2 + '&captcha=' + captcha
+				})
+				.always(function(reponse) {
+					that.elements.submit_form.addClass('disabled');
+					that.elements.submit_form.unbind('tap');
+					that.elements.submit_form.bind("tap", function(e){
+						e.preventDefault();
+					});
+				});
+				/*
 				window.setTimeout(function(){
 					that.elements.submit_form.removeClass('success');
-					that.elements.submit_form.html('Send');
-				}, 1000);
+					that.elements.submit_form.children('.response').html('Send');
+				}, 1600);
+				*/
 			}else{
 				that.elements.submit_form.addClass('error');
-
+				that.elements.submit_form.children('.response').html('Error');
 				window.setTimeout(function(){
 					that.elements.submit_form.removeClass('error');
-					that.elements.submit_form.html('Send');
-				}, 1000);
+					that.elements.submit_form.children('.response').html('Send');
+				}, 1600);
 			}			
 		});
 	},
 
-	isValidMail = function(){
-		var valid = that.email_regex.test($.trim(that.elements.email_form.val()));
+	isValidMail = function(email){
+		var valid = email;
 		if(valid === true){
 			that.elements.email_form.prev('.required-error').remove();
 		}else{
@@ -221,8 +241,8 @@
 		return valid;
 	},
 
-	isValidMessage = function(){
-		var valid = $.trim(that.elements.message_form.val()).length > 0? true: false;
+	isValidMessage = function(message){
+		var valid = message.length > 0? true: false;
 		if(valid === true){
 			that.elements.message_form.prev('.required-error').remove();
 		}else{
@@ -233,8 +253,8 @@
 		return valid;	
 	},
 
-	isValidCaptcha = function(){
-		var isValid = (parseInt(that.elements.number_1.val()) + parseInt(that.elements.number_2.val()) == parseInt(that.elements.captcha.val()));
+	isValidCaptcha = function(number_1, number_2, captcha){
+		var isValid = (parseInt(number_1) + parseInt(number_2) == parseInt(captcha));
 		if(isValid === true){
 			that.elements.captcha.prev('.required-error').remove();
 		}else{
@@ -242,6 +262,7 @@
 				that.elements.captcha.before("<label for='captcha' class='required-error'>Please enter the correct number</label>");
 			}
 		}
+		return isValid;
 	};
 
 	return {

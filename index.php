@@ -1,8 +1,11 @@
 <?php
+
+include_once 'php/default.inc.php';
+
 $email = $message = $captcha = false;
 if(isset($_POST['email']) && !empty($_POST['email'])){
 	$email = htmlentities($_POST['email']);
-	if(!((strpos($field, ".") > 0) && (strpos($field, "@") > 0)) || preg_match("/[^a-zA-Z0-9.@_-]/", $email)){
+	if(!((strpos($email, ".") > 0) && (strpos($email, "@") > 0)) || preg_match("/[^a-zA-Z0-9.@_-]/", $email)){
 		$email = false;
 	}
 }
@@ -15,6 +18,10 @@ if(isset($_POST['captcha']) && !empty($_POST['captcha'])){
 	if(intval($_POST['number-1']) + intval($_POST['number-2']) == intval($total)){
 		$captcha = true;
 	}
+}
+
+if($email != false && $message != false && $captcha != false){
+	mail($me, "Portfolio - Request", $message, null, "-f".$email); 
 }
 
 ?>
@@ -244,7 +251,7 @@ if(isset($_POST['captcha']) && !empty($_POST['captcha'])){
 							</section>
 							<section>
 								<h3 class="highlight">Interests</h3>
-								<p>
+								<p class="interests">
 									The details are not the details. They make the fucking design. When you sit down to work, external critics aren’t the enemy. It’s you who you must to fight against to do great fucking work. You must overcome yourself. Respect your fucking craft. Form follows fucking function. Use your fucking hands. You are not your fucking work.
 								</p>
 							</section>
