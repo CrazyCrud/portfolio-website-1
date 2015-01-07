@@ -121,6 +121,7 @@ ul{
 	position: relative;
 	width: 100%;
 	margin-top: 56px;
+	margin-bottom: $positive_4;
 	padding: $positive_10 0 $positive_8 0;
 	font-size: 1rem;
 	background: url('img/header_small.png') center -6% no-repeat fixed;
@@ -163,6 +164,18 @@ ul{
 	max-width: 1700px;
 	p{
 		line-height: $positive_5;
+	}
+}
+
+.footer{
+	display: block;
+	padding: 0 $positive_1;
+	font-size: $negative_2;
+	font-family: $default_light;
+	font-weight: 200;
+	overflow: hidden;
+	p{
+		text-align: center;
 	}
 }
 

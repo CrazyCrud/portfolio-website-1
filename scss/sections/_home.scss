@@ -4,6 +4,20 @@
 	font-size: 1.333rem;
 	text-align: center;
 	margin-bottom: $positive_2;
+
+	h2{
+		display: inline-block;
+	}
+
+	.line{
+		position: relative;
+		width: 50%;
+		margin: 0 auto;
+		top: -50px;
+		border-top: 2px solid #18131e;
+		border-bottom: 2px solid #2f2a33;
+		z-index: -1;
+	}
 }
 
 .headline{
@@ -27,7 +41,7 @@
 }
 
 .skills, .about, .contact, .projects{
-	margin-bottom: $positive_9;
+	margin-bottom: $positive_10;
 }
 
 .skills-content-container{
@@ -88,7 +102,7 @@
 			display: block;
 			float: left;
 			width: 33%;
-
+			margin-bottom: 0;
 			.skill-text-container{
 				padding: 0 $positive_1;
 			}
@@ -103,13 +117,12 @@
 .projects-content{
 	display: block;
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0;
 	li{
 		display: block;
 		position: relative;
-		width: 100%;
 		height: 260px;
 		margin: 0;
 		padding: 0;
@@ -127,18 +140,24 @@
 			right: 0;
 			background: $background;
 			opacity: 0.4;
-			z-index: 0;
+			z-index: -1;
+			transition: all 0.3s;
 		}
 
 		.project-description{
 			display: block;
 			padding: $negative_2 0 $negative_2 $negative_1;
-			
+			pointer-events: none;
 			h3{
-
+				font-family: $default_light;
+				font-weight: 200;
+				letter-spacing: $negative_6;
+				transition: all 0.3s;
 			}
 			p{
-
+				line-height: $positive_3;
+				//opacity: 0;
+				//transition: all 0.5s;
 			}
 		}
 
@@ -151,10 +170,28 @@
 			padding: $negative_2 0 $negative_2 $negative_1;
 			z-index: 1;
 			font-size: $negative_2;
+			font-family: $default_bold;
+			font-weight: 700;
+		}
+		transition: background-position 0.2s; 
+	}
+
+	li:hover{
+		.project-overlay{
+			opacity: 0.2;
+		}
+		.project-description{
+			h3{
+				letter-spacing: $negative_9;
+			}
+			p{
+				//opacity: 1;
+			}
 		}
 	}
+
 	.project-1{
-		background: url('http://placekitten.com/g/500/500') left top no-repeat scroll;
+		background: url('http://placekitten.com/g/800/800') left top no-repeat scroll;
 	} 
 
 	.project-2{
@@ -170,8 +207,12 @@
 	}
 
 	.project-5{
-		background: url('http://placekitten.com/g/500/500') left top no-repeat scroll;
+		background: url('http://placekitten.com/g/900/900') left top no-repeat scroll;
 	}
+}
+
+.js .projects-content{
+
 }
 
 @media screen and (min-width: 32em){
@@ -179,6 +220,33 @@
 		li{
 			width: 50%;
 			float: left;
+		}
+	}
+}
+
+@media screen and(min-width: $skills_breakpoint){
+	.projects-content{
+		li{
+			width: 46%;
+			height: 300px;
+			margin-right: 4%;
+			margin-top: 4%;
+			.project-description{
+				p{
+					opacity: 0;
+					transform: translateX(-76%);
+					transition: opacity 0.1s, transform 0.3s;
+				}
+			}
+		}
+		li:hover{
+			.project-description{
+				p{
+					opacity: 1;
+					transform: translateX(0%);
+				}
+			}
+			background-position: left 6%;
 		}
 	}
 }
@@ -256,8 +324,10 @@
 
 #contact{
 	margin: 0;
-	margin-bottom: 200px;
+	margin-bottom: $positive_6;
 	padding: 0;
+	overflow: hidden;
+
 	fieldset{
 		display: block;
 		margin: 0 auto;
@@ -309,11 +379,17 @@
 		background: $primary_dark;
 		color: $primary_light;
 		border-radius: 7px;
-		box-shadow: 0 5px #412347;
+		border-bottom: 5px solid #412347;
 		position: relative;
+		margin-top: -2px;
 		.response{
 			
 		}
+	}
+
+	.button:hover{
+		margin-top: 0;
+		border-bottom: 3px solid #412347;
 	}
 
 	.button:before{
@@ -352,7 +428,14 @@
 	}
 
 	.button.disabled{
-		box-shadow: 0 2px #412347;
+		margin-top: 0;
+		border-bottom: 3px solid #412347;
+	}
+}
+
+.contact{
+	.icons-container{
+		text-align: center;
 	}
 }
 

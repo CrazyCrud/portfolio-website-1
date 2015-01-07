@@ -29,7 +29,7 @@ if($email != false && $message != false && $captcha != false){
 <!doctype html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width; initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio of Constantin Lehenmeier</title>
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 	<script type="text/javascript" src="js/vendor/modernizr.js"></script>
@@ -42,6 +42,9 @@ if($email != false && $message != false && $captcha != false){
 			'js/production.js'
 		]);
 	</script>
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+	</noscript>
 </head>
 <body>
 	<div class="index">
@@ -81,7 +84,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: rotate(-8deg);" data-top="transform: rotate(0);">Skillset</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.1) rotate(-6deg);">Skillset</span>
 						</header>
 						<div class="skills-content-container">
 							<ul class="skills-content">
@@ -129,14 +132,14 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: rotate(-10deg);" data-top="transform: rotate(0);">Projects &#38; Papers</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.1) rotate(-6deg);">Projects</span>
 						</header>
 						<div class="projects-content-container">
 							<ul class="projects-content">
 								<li class="project-1">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3>Project 1</h3>
+										<h3 class="project-titel uppercase">Project 1</h3>
 										<p>
 											Design is all about fucking relationships—the relationship of form
 										</p>
@@ -145,8 +148,8 @@ if($email != false && $message != false && $captcha != false){
 								</li>
 								<li class="project-2">
 									<span class="project-overlay"></span>
-									<div class="project-description">
-										<h3>Project 2</h3>
+									<div class="project-description ">
+										<h3 class="project-titel uppercase">Project 2</h3>
 										<p>
 											Your rapidograph pens are fucking dried up
 										</p>
@@ -156,7 +159,7 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-3">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3>Project 3</h3>
+										<h3 class="project-titel uppercase">Project 3</h3>
 										<p>
 											When you sit down to work, external critics aren’t the
 										</p>
@@ -166,7 +169,7 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-4">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3>Project 4</h3>
+										<h3 class="project-titel uppercase">Project 4</h3>
 										<p>
 											You need to sit down and sketch more fucking ideas
 										</p>
@@ -176,7 +179,7 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-5">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3>Project 5</h3>
+										<h3 class="project-titel uppercase">Project 5</h3>
 										<p>
 											Design as if your fucking life depended on it
 										</p>
@@ -194,7 +197,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: rotate(-22deg);" data-top="transform: rotate(0);">Self &#38; I</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.1) rotate(-6deg);">Self &#38; I</span>
 						</header>
 						<div class="about-content-container">
 							<section>
@@ -265,7 +268,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>Your</h2>
-							<span class="headline" data-0="transform: rotate(-22deg);" data-top="transform: rotate(0);">Questions</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.1) rotate(-6deg);">Questions</span>
 						</header>
 							<form id="contact" name="contact" method="post" action="index.php">
 								<fieldset>
@@ -294,6 +297,9 @@ if($email != false && $message != false && $captcha != false){
 					</article>
 				</section>
 			</div>
+			<footer class="footer">
+				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Pedro Sanchez</p>
+			</footer>
 		</div>
 	</div>
 </body>
