@@ -36,8 +36,8 @@ if($email != false && $message != false && $captcha != false){
 	<script type="text/javascript">
 		Modernizr.load([
 			{
-				//test : Modernizr.fontface && Modernizr.canvas && Modernizr.cssgradients,
-				//nope : ['presentational-polyfill.js', 'presentational.css']
+				test : Modernizr.mq('only all'),
+				nope : ['js/vendor/respond.js']
 			},
 			'js/production.js'
 		]);
@@ -58,11 +58,11 @@ if($email != false && $message != false && $captcha != false){
 				</ul>
 				<section class="top-bar-section">
 					<ul>
-						<li class="top-bar-item uppercase"><a id="link-skills" href="#">Skills</a></li>
-						<li class="top-bar-item uppercase"><a id="link-projects" href="#">Projects</a></li>
+						<li class="top-bar-item uppercase"><a id="link-skills" href="#skills">Skills</a></li>
+						<li class="top-bar-item uppercase"><a id="link-projects" href="#projects">Projects</a></li>
 						<li class="top-bar-item divider"></li>
-						<li class="top-bar-item uppercase"><a id="link-about" href="#">About</a></li>
-						<li class="top-bar-item uppercase"><a id="link-contact" href="#">Contact</a></li>
+						<li class="top-bar-item uppercase"><a id="link-about" href="#about">About</a></li>
+						<li class="top-bar-item uppercase"><a id="link-contact" href="#contact">Contact</a></li>
 						<div class="clear"></div>
 					</ul>
 				</section>
@@ -80,11 +80,12 @@ if($email != false && $message != false && $captcha != false){
 		</div>
 		<div class="content">
 			<div class="skills">
+				<a class="dest" name="skills"></a>
 				<section>
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.1) rotate(-6deg);">Skillset</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.16) rotate(-6deg);">Skillset</span>
 						</header>
 						<div class="skills-content-container">
 							<ul class="skills-content">
@@ -128,11 +129,12 @@ if($email != false && $message != false && $captcha != false){
 				</section>
 			</div>
 			<div class="projects">
+				<a class="dest" name="projects"></a>
 				<section>
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.1) rotate(-6deg);">Projects</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.16) rotate(-6deg);">Projects</span>
 						</header>
 						<div class="projects-content-container">
 							<ul class="projects-content">
@@ -187,17 +189,21 @@ if($email != false && $message != false && $captcha != false){
 									<span class="project-caption uppercase">Usability</span>
 								</li>
 								<div class="clear"></div>
+								<p class="github">You can also check some of these projects and other projects on my <span class="primary-light">GitHub</span> account
+									</br><span class="icon-github"></span>
+								</p>
 							</ul>
 						</div>
 					</article>
 				</section>
 			</div>
 			<div class="about">
+				<a class="dest" name="about"></a>
 				<section>
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.1) rotate(-6deg);">Self &#38; I</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.16) rotate(-6deg);">Self &#38; I</span>
 						</header>
 						<div class="about-content-container">
 							<section>
@@ -264,11 +270,12 @@ if($email != false && $message != false && $captcha != false){
 				</section>
 			</div>
 			<div class="contact">
+				<a class="dest" name="contact"></a>
 				<section>
 					<article>
 						<header class="header-section">
 							<h2>Your</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.1) rotate(-6deg);">Questions</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.16) rotate(-6deg);">Questions</span>
 						</header>
 							<form id="contact" name="contact" method="post" action="index.php">
 								<fieldset>

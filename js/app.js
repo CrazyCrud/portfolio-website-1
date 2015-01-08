@@ -35,21 +35,25 @@ var App = (function(){
 		});
 
 		that.elements.link_skills.bind("tap", function(e){
+			e.preventDefault();
 			scrolling.stopAnimateTo();
             scrolling.animateTo(that.elements.skills.offset().top - offset);
         });
 
 		that.elements.link_projects.bind("tap", function(e){
+			e.preventDefault();
 			scrolling.stopAnimateTo();
             scrolling.animateTo(that.elements.projects.offset().top - offset);
         });
 
 		that.elements.link_about.bind("tap", function(e){
+			e.preventDefault();
 			scrolling.stopAnimateTo();
             scrolling.animateTo(that.elements.about.offset().top- offset);
         });
 
 		that.elements.link_contact.bind("tap", function(e){
+			e.preventDefault();
 			scrolling.stopAnimateTo();
             scrolling.animateTo(that.elements.contact.offset().top - offset);
         });

@@ -2,15 +2,17 @@ html{ font-family: sans-serif; }
 body{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 article, header, nav, section{ display: block; }
 a{ background-color: transparent; }
+ html input[disabled]{ cursor: default; }
 html{ font-size: 20px; }
 body{ width: 100%; height: 100%; overflow-x: hidden; cursor: default; background-image: url(img/texture.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; color: white; box-sizing: border-box; font-family: SteagalRegular; font-weight: 400; font-style: normal; background-position: initial initial; background-repeat: repeat repeat; }
- h2, h3{ font-family: SteagalBold; font-weight: 700; }
+ h2, h3, h5{ font-family: SteagalBold; font-weight: 700; }
 h2{ font-size: 1.333em; }
 h3{ font-size: 1.333em; }
 ul{ list-style-type: none; list-style-position: initial; list-style-image: initial; }
 .clear{ clear: both; height: 0px; }
 .uppercase{ text-transform: uppercase; }
 .primary-light{ color: rgb(200, 76, 136); }
+.required{ color: rgb(200, 76, 136); font-size: 1.333em; font-weight: 700; }
 .header{ display: block; position: relative; width: 100%; margin-top: 56px; margin-bottom: 1.777em; padding-top: 4.209em; padding-right: 0px; padding-bottom: 3.157em; padding-left: 0px; font-size: 1rem; background-image: url(img/header_small.png); background-attachment: fixed; background-origin: initial; background-clip: initial; background-color: initial; z-index: 1; overflow-x: hidden; overflow-y: hidden; background-position: 50% -6%; background-repeat: no-repeat no-repeat; }
 @media screen and (min-width: 32em){
 .header{ background-image: url(img/header_large.png); background-attachment: fixed; background-origin: initial; background-clip: initial; background-color: initial; background-position: 50% -6%; background-repeat: no-repeat no-repeat; }
@@ -53,7 +55,7 @@ ul{ list-style-type: none; list-style-position: initial; list-style-image: initi
 @media screen and (min-width: 54em){
 .skills{ padding-top: 0px; padding-right: 1.777em; padding-bottom: 0px; padding-left: 1.777em; }
 }
-.skills, .projects{ margin-bottom: 4.209em; }
+.skills{ margin-bottom: 4.209em; }
 .skills-content{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: center; }
 .skills-content li{ display: block; width: 100%; margin-bottom: 3.157em; }
 .skills-content .skill-icon-container{ display: block; position: relative; width: 100%; }
@@ -69,20 +71,20 @@ ul{ list-style-type: none; list-style-position: initial; list-style-image: initi
 .skills-content li{ display: block; float: left; width: 33%; margin-bottom: 0px; }
 .skills-content li .skill-text-container{ padding-top: 0px; padding-right: 1.066em; padding-bottom: 0px; padding-left: 1.066em; }
 }
-.projects-content{ display: block; width: 100%; max-width: 1200px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
-.projects-content li{ display: block; position: relative; height: 260px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; z-index: 0; -webkit-transition-property: background-position; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; }
  .projects-content li .project-caption{ display: block; }
 .projects-content li .project-overlay{ position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(28, 25, 44); opacity: 0.4; z-index: -1; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; background-position: initial initial; background-repeat: initial initial; }
 .projects-content li .project-description{ display: block; padding-top: 0.75em; padding-right: 0px; padding-bottom: 0.75em; padding-left: 0.8em; pointer-events: none; }
 .projects-content li .project-description h3{ font-family: SteagalLight; font-weight: 200; letter-spacing: 0.422em; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; }
 .projects-content li .project-description p{ line-height: 1.422em; }
 .projects-content li .project-caption{ position: absolute; left: 0px; bottom: 0px; width: 100%; height: auto; padding-top: 0.75em; padding-right: 0px; padding-bottom: 0.75em; padding-left: 0.8em; z-index: 1; font-size: 0.75em; font-family: SteagalBold; font-weight: 700; }
-.projects-content .project-1{ background-image: url(http://placekitten.com/g/800/800); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }
-.projects-content .project-2{ background-image: url(http://placekitten.com/g/700/700); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }
-@media screen and (min-width: 32em){
-.projects-content li{ width: 50%; float: left; }
-}
 @media screen and (min-width: 58em){
-.projects-content li{ width: 46%; height: 300px; margin-right: 4%; margin-top: 4%; }
 .projects-content li .project-description p{ opacity: 0; -webkit-transform: translateX(-76%); -webkit-transition-property: opacity, -webkit-transform; -webkit-transition-duration: 0.1s, 0.3s; -webkit-transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; }
 }
+.about-content-container section h5{ margin-top: 1.066em; margin-right: 0px; margin-bottom: 1.066em; margin-left: 0px; }
+.about-content-container section p{ line-height: 1.422em; }
+@media screen and (min-width: 54em){
+.about-content-container section p{ line-height: 1.895em; }
+.about-content-container .when p{ margin-top: 0.6em; }
+}
+.when .date{ font-weight: 300; font-size: 0.75em; }
+#contact #number-1, #contact #number-2{ text-align: center; color: white; background-color: transparent; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; }

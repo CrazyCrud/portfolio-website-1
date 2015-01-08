@@ -128,6 +128,7 @@
 		padding: 0;
 		overflow: hidden;
 		z-index: 0;
+		cursor: pointer;
 		.project-image, .project-caption{
 			display: block;
 		}
@@ -209,6 +210,17 @@
 	.project-5{
 		background: url('http://placekitten.com/g/900/900') left top no-repeat scroll;
 	}
+
+	.github{
+		text-align: center;
+		margin-top: $positive_4;
+		.icon-github{
+			width: 56px;
+			height: 56px;
+			background: url('') left top no-repeat scroll;
+			background-size: cover; 
+		}
+	}
 }
 
 .js .projects-content{
@@ -231,22 +243,30 @@
 			height: 300px;
 			margin-right: 4%;
 			margin-top: 4%;
-			.project-description{
-				p{
-					opacity: 0;
-					transform: translateX(-76%);
-					transition: opacity 0.1s, transform 0.3s;
-				}
-			}
 		}
 		li:hover{
-			.project-description{
-				p{
-					opacity: 1;
-					transform: translateX(0%);
+			background-position: left 6%;
+		}
+	}
+	.csstransforms{
+		.projects-content{
+			li{
+				.project-description{
+					p{
+						opacity: 0;
+						transform: translateX(-76%);
+						transition: opacity 0.1s, transform 0.3s;
+					}
 				}
 			}
-			background-position: left 6%;
+			li:hover{
+				.project-description{
+					p{
+						opacity: 1;
+						transform: translateX(0%);
+					}
+				}
+			}
 		}
 	}
 }
