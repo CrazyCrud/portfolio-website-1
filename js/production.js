@@ -183,9 +183,13 @@
 			scrolling.stopAnimateTo();
             scrolling.animateTo(that.elements.contact.offset().top - offset);
         });
-
+		loadImages();
         activateForm();
 		
+	},
+
+	loadImages = function(){
+		that.elements.projects.find('.projects-content').addClass('load');
 	},
 
 	activateForm = function(){

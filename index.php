@@ -85,7 +85,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.16) rotate(-6deg);">Skillset</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Skillset</span>
 						</header>
 						<div class="skills-content-container">
 							<ul class="skills-content">
@@ -134,7 +134,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.16) rotate(-6deg);">Projects</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Projects</span>
 						</header>
 						<div class="projects-content-container">
 							<ul class="projects-content">
@@ -188,8 +188,18 @@ if($email != false && $message != false && $captcha != false){
 									</div>
 									<span class="project-caption uppercase">Usability</span>
 								</li>
+								<li class="project-6">
+									<span class="project-overlay"></span>
+									<div class="project-description">
+										<h3 class="project-titel uppercase">All Projects</h3>
+										<p>
+											You can view all projects here
+										</p>
+									</div>
+									<span class="project-caption uppercase"></span>
+								</li>
 								<div class="clear"></div>
-								<p class="github">You can also check some of these projects and other projects on my <span class="primary-light">GitHub</span> account
+								<p class="github"><span class="uppercase highlight">Chin check out some code</span>You can also check the code of some of these projects and other minor projects and works on my <span class="primary-light"><a href="https://github.com/CrazyCrud">GitHub</a></span> account!
 									</br><span class="icon-github"></span>
 								</p>
 							</ul>
@@ -203,7 +213,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.16) rotate(-6deg);">Self &#38; I</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Self &#38; I</span>
 						</header>
 						<div class="about-content-container">
 							<section>
@@ -275,7 +285,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>Your</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.16) rotate(-6deg);">Questions</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.2) rotate(-6deg);">Questions</span>
 						</header>
 							<form id="contact" name="contact" method="post" action="index.php">
 								<fieldset>
