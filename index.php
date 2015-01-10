@@ -145,9 +145,9 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-1">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3 class="project-titel uppercase">Project 1</h3>
+										<h3 class="project-titel uppercase">Latrinalia</h3>
 										<p>
-											Design is all about fucking relationships—the relationship of form
+											A responsive platform to share and comment on toilet graffiti
 										</p>
 									</div>
 									<span class="project-caption uppercase">Webdesign</span>
@@ -155,19 +155,19 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-2">
 									<span class="project-overlay"></span>
 									<div class="project-description ">
-										<h3 class="project-titel uppercase">Project 2</h3>
+										<h3 class="project-titel uppercase">Settlers of Catan</h3>
 										<p>
-											Your rapidograph pens are fucking dried up
+											An augmented version of the tabletop game <em>Settlers of Catan</em>
 										</p>
 									</div>
-									<span class="project-caption uppercase">Webdesign</span>
+									<span class="project-caption uppercase">Augmented Reality</span>
 								</li>
 								<li class="project-3">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3 class="project-titel uppercase">Project 3</h3>
+										<h3 class="project-titel uppercase">Beliar</h3>
 										<p>
-											When you sit down to work, external critics aren’t the
+											A prototyp of a <em>Dungeon&Dragons</em> inspired singleplayer game
 										</p>
 									</div>
 									<span class="project-caption uppercase">Game Development</span>
@@ -175,9 +175,9 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-4">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3 class="project-titel uppercase">Project 4</h3>
+										<h3 class="project-titel uppercase">Media Informatics Showroom</h3>
 										<p>
-											You need to sit down and sketch more fucking ideas
+											A multitouch application which offers multimedia information about the university of Ratisbon
 										</p>
 									</div>
 									<span class="project-caption uppercase">Multitouch Table</span>
@@ -185,12 +185,12 @@ if($email != false && $message != false && $captcha != false){
 								<li class="project-5">
 									<span class="project-overlay"></span>
 									<div class="project-description">
-										<h3 class="project-titel uppercase">Project 5</h3>
+										<h3 class="project-titel uppercase">Music in the Air</h3>
 										<p>
-											Design as if your fucking life depended on it
+											A <em>Microsoft Kinect</em> game which allows the user to pratice and play different instruments
 										</p>
 									</div>
-									<span class="project-caption uppercase">Usability</span>
+									<span class="project-caption uppercase">Interaction Design</span>
 								</li>
 								<li class="project-6">
 									<span class="project-overlay"></span>

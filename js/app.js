@@ -64,6 +64,15 @@ var App = (function(){
 
 	loadImages = function(){
 		that.elements.projects.find('.projects-content').addClass('load');
+		that.elements.projects.find('li').css('opacity', '0');
+		$(window).scroll(function(event) {
+			if($(document).scrollTop() > that.elements.projects.offset().top - 600){
+				that.elements.projects.find('li').each(function(index, el) {
+					$(this).animate({'opacity': '1'}, 1000);
+				});
+				$(window).unbind('scroll');
+			}
+		});
 	},
 
 	activateForm = function(){
