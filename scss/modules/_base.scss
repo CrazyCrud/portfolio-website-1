@@ -81,6 +81,11 @@ ul{
 	list-style: none;
 }
 
+strong{
+	font-family: $default_bold;
+	font-weight: 700;
+}
+
 a.dest{
 	height: 0;
 	width: 0;

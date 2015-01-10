@@ -96,7 +96,9 @@ if($email != false && $message != false && $captcha != false){
 									<div class="skill-text-container">
 										<h3>Research</h3>
 										<p>
-											Must-do is a good fucking master. Sometimes it is appropriate to place various typographic elements on the outside of the fucking left margin of text to maintain a strong vertical axis.
+											I have been reviewing papers and works in the field of <strong>human-computer-interaction</strong> 
+											and took possesion of researching topics to get an unterstanding of the way things work. 
+											I wrote several essays and works on my own and I'm always curious to learn about new things. 
 										</p>
 									</div>
 								</li>
@@ -107,7 +109,8 @@ if($email != false && $message != false && $captcha != false){
 									<div class="skill-text-container">
 										<h3>Usability & UX</h3>
 										<p>
-											Dedicate yourself to lifelong fucking learning. Nothing of value comes to you without fucking working at it. When you design, you have to draw on your own fucking life experiences. 
+											I've got a knowledge of established <strong>usability methods and practices</strong> to either build or evaluate and redesign a product. 
+											Generally I'm always aiming to turn a human-computer-interaction to a <strong>human-human-interaction</strong>.
 										</p>
 									</div>
 								</li>
@@ -118,7 +121,8 @@ if($email != false && $message != false && $captcha != false){
 									<div class="skill-text-container">
 										<h3>Coding</h3>
 										<p>
-											Don’t get hung up on things that don’t fucking work. Sometimes it is appropriate to place various typographic elements on the outside of the fucking left margin of text to maintain a strong vertical axis.
+											Working with new technologies like the <em>Kinect</em> or the <em>Wii</em>, I developed skills in lagnuages like <strong>Java</strong>, <strong>C#</strong> and <strong>Python</strong>.
+											Also I'm trained in frontend and backend <strong>web design and development</strong>.
 										</p>
 									</div>
 								</li>
@@ -199,7 +203,7 @@ if($email != false && $message != false && $captcha != false){
 									<span class="project-caption uppercase"></span>
 								</li>
 								<div class="clear"></div>
-								<p class="github"><span class="uppercase highlight">Chin check out some code</span>You can also check the code of some of these projects and other minor projects and works on my <span class="primary-light"><a href="https://github.com/CrazyCrud">GitHub</a></span> account!
+								<p class="github"><span class="uppercase highlight">Chin check out some code</span>You can also check the code of some of these projects and other minor projects and works including this portfolio site on my <span class="primary-light"><a href="https://github.com/CrazyCrud"><strong>GitHub</strong></a></span> account!
 									</br><span class="icon-github"></span>
 								</p>
 							</ul>
@@ -221,7 +225,7 @@ if($email != false && $message != false && $captcha != false){
 								<div class="what">
 									<h5 class="uppercase">University-Entrance Diploma</h5>
 									<p>
-										You won’t get good at anything by doing it a lot fucking aimlessly. Nothing of value comes to you without fucking working at it. To go partway is easy, but mastering anything requires hard fucking work. Don’t worry about what other people fucking think.
+										I graduated with honors and received a general qualification for university entrance.
 									</p>
 								</div>
 								<div class="when">
@@ -232,7 +236,10 @@ if($email != false && $message != false && $captcha != false){
 								<div class="what">
 									<h5 class="uppercase">Academic Studies in Media and Computer Science</h5>
 									<p>
-										Form follows fucking function. Don’t get hung up on things that don’t fucking work. Don’t fucking lie to yourself. Never let your guard down by thinking you’re fucking good enough. You won’t get good at anything by doing it a lot fucking aimlessly. 
+										In the terms of my study in Ratisbon, Germany I received an extensive as well as far-reaching teaching in the field of the human-computer-interaction.</br>
+										I aquired knowledge and pratical skills in working areas like <strong>interaction design</strong>, <strong>media development</strong> and <strong>software development</strong>.
+										</br>Also I was teached in the basics of <strong>project management</strong> and learned about ways to tackle problems and obstacles.
+										I learned to work and communicate with other people and developed a love-hate relationship with my laptop. 
 									</p>
 								</div>
 								<div class="when">
@@ -242,12 +249,15 @@ if($email != false && $message != false && $captcha != false){
 								</div>
 								<div class="clear"></div>
 							</section>
-							<section>
+							<section class="employment">
 								<h3 class="highlight">Employment</h3>
+								<p class="info">
+									While I attended the course of media and computer science I worked at the IT branch of the university's library.</br>
+								</p>
 								<div class="what">
 									<h5 class="uppercase">Backend-Work</h5>
 									<p>
-										Widows and orphans are terrible fucking tragedies, both in real life and definitely in typography. Respect your fucking craft. If you’re not being fucking honest with yourself how could you ever hope to communicate something meaningful to someone else? When you sit down to work, external critics aren’t the enemy.
+										I redesigned the strcuture and organization of few <strong>mySQL</strong> databases and their connection to the frontend.
 									</p>
 								</div>
 								<div class="when">
@@ -258,7 +268,7 @@ if($email != false && $message != false && $captcha != false){
 								<div class="what">
 									<h5 class="uppercase">Responsive Refactoring</h5>
 									<p>
-										Design as if your fucking life depended on it. This design is fucking brilliant. Don’t get hung up on things that don’t fucking work.
+										I was involved in the <strong>responsive</strong> redesign of a digital magazine library.
 									</p>
 								</div>
 								<div class="when">
@@ -271,7 +281,9 @@ if($email != false && $message != false && $captcha != false){
 							<section>
 								<h3 class="highlight">Interests</h3>
 								<p class="interests">
-									The details are not the details. They make the fucking design. When you sit down to work, external critics aren’t the enemy. It’s you who you must to fight against to do great fucking work. You must overcome yourself. Respect your fucking craft. Form follows fucking function. Use your fucking hands. You are not your fucking work.
+									Besides designing and developing things, I'm a <strong>music</strong> enthusiast in collecting, listening and creating - not so listenable - music.
+									I spent a lot of time creating and tweaking sounds in <em>Ableton</em> and sampling obscure sources; I'm always searching for new and innovative music.</br> 
+									When I'm not listening to music I'm trying to get my head around the history and the evolution of type. For a few years I have been reading all influential books about <strong>typography</strong> which is a never ending venture.
 								</p>
 							</section>
 							
@@ -287,7 +299,7 @@ if($email != false && $message != false && $captcha != false){
 							<h2>Your</h2>
 							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.2) rotate(-6deg);">Questions</span>
 						</header>
-							<form id="contact" name="contact" method="post" action="index.php">
+							<form id="contact" name="contact" method="post" action="index.php#contact">
 								<fieldset>
 									<label for="name">What&#39;s your name?</label>
 									<input type="text" name="name" id="name">

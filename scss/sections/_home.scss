@@ -56,6 +56,11 @@
 		display: block;
 		width: 100%;
 		margin-bottom: $positive_8;
+
+		.highlight{
+			font-family: $default_bold;
+			font-weight: 700;
+		}
 	}
 
 	.skill-icon-container{
@@ -96,7 +101,7 @@
 
 @media screen and (min-width: 58em){
 	.skills-content{
-		max-width: 60em;
+		max-width: 70em;
 		margin: 0 auto;
 		li{
 			display: block;
@@ -104,7 +109,7 @@
 			width: 33%;
 			margin-bottom: 0;
 			.skill-text-container{
-				padding: 0 $positive_1;
+				padding: 0 $positive_2;
 			}
 		}
 	}
@@ -330,6 +335,12 @@
 
 		p{
 			line-height: $positive_3;
+		}
+	}
+
+	.employment{
+		.info{
+			text-align: left;
 		}
 	}
 }

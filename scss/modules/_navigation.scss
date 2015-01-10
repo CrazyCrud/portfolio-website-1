@@ -4,9 +4,10 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	font-size: 1rem;
-	font-family: $default_bold;
-	font-weight: 700;
+	font-size: $positive_1;
+	//font-family: $default_bold;
+	font-family: $default_light;
+	font-weight: 200;
 	z-index: 100;
 }
 
@@ -113,7 +114,7 @@
 		ul{
 			display: inline-block;
 			width: auto;
-			max-width: 700px;
+			max-width: 40em;
 			li, li.divider{
 				display: block;
 				float: left;
