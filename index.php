@@ -27,7 +27,7 @@ if($email != false && $message != false && $captcha != false){
 ?>
 
 <!doctype html>
-<html>
+<html class="no-js">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio of Constantin Lehenmeier</title>
