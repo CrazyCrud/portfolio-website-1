@@ -177,7 +177,7 @@ if($email != false && $message != false && $captcha != false){
 									<div class="project-description">
 										<h3 class="project-titel uppercase">Media Informatics Showroom</h3>
 										<p>
-											A multitouch application which offers multimedia information about the university of Ratisbon
+											A multitouch application offering multimedia information about student projects
 										</p>
 									</div>
 									<span class="project-caption uppercase">Multitouch Table</span>

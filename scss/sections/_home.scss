@@ -117,53 +117,53 @@
 
 .js .projects-content.load{
 	.project-1{
-		background: url('http://placekitten.com/g/800/800') left top no-repeat scroll;
+		background: url('img/latrinalia.png') left top no-repeat scroll;
 	} 
 
 	.project-2{
-		background: url('http://placekitten.com/g/700/700') left top no-repeat scroll;
+		background: url('img/settler.jpg') left top no-repeat scroll;
 	}
 
 	.project-3{
-		background: url('http://placekitten.com/g/600/500') left top no-repeat scroll;
+		background: url('img/beliar.jpg') left top no-repeat scroll;
 	}
 
 	.project-4{
-		background: url('http://placekitten.com/g/600/700') left top no-repeat scroll;
+		background: url('img/multitouch.jpg') left top no-repeat scroll;
 	}
 
 	.project-5{
-		background: url('http://placekitten.com/g/900/900') left top no-repeat scroll;
+		background: url('img/music.jpg') left top no-repeat scroll;
 	}
 
 	.project-6{
-		background: url('http://placekitten.com/g/800/800') left top no-repeat scroll;
+		background: url('img/others.jpg') left top no-repeat scroll;
 	}
 }
 
 .no-js .projects-content{
 	.project-1{
-		background: url('http://placekitten.com/g/800/800') left top no-repeat scroll;
+		background: url('img/latrinalia.png') left top no-repeat scroll;
 	} 
 
 	.project-2{
-		background: url('http://placekitten.com/g/700/700') left top no-repeat scroll;
+		background: url('img/settler.jpg') left top no-repeat scroll;
 	}
 
 	.project-3{
-		background: url('http://placekitten.com/g/600/500') left top no-repeat scroll;
+		background: url('img/beliar.jpg') left top no-repeat scroll;
 	}
 
 	.project-4{
-		background: url('http://placekitten.com/g/600/700') left top no-repeat scroll;
+		background: url('img/multitouch.jpg') left top no-repeat scroll;
 	}
 
 	.project-5{
-		background: url('http://placekitten.com/g/900/900') left top no-repeat scroll;
+		background: url('img/music.jpg') left top no-repeat scroll;
 	}
 
 	.project-6{
-		background: url('http://placekitten.com/g/800/800') left top no-repeat scroll;
+		background: url('img/others.jpg') left top no-repeat scroll;
 	}
 }
 
@@ -193,7 +193,7 @@
 			bottom: 0;
 			right: 0;
 			background: $background;
-			opacity: 0.4;
+			opacity: 0.6;
 			z-index: -1;
 			transition: all 0.3s;
 		}
@@ -230,7 +230,7 @@
 
 	li:hover{
 		.project-overlay{
-			opacity: 0.2;
+			opacity: 0.3;
 		}
 		.project-description{
 			h3{
