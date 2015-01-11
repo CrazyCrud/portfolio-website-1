@@ -142,66 +142,78 @@ if($email != false && $message != false && $captcha != false){
 						</header>
 						<div class="projects-content-container">
 							<ul class="projects-content">
-								<li class="project-1">
-									<span class="project-overlay"></span>
-									<div class="project-description">
-										<h3 class="project-titel uppercase">Latrinalia</h3>
-										<p>
-											A responsive platform to share and comment on toilet graffiti
-										</p>
-									</div>
-									<span class="project-caption uppercase">Webdesign</span>
-								</li>
-								<li class="project-2">
-									<span class="project-overlay"></span>
-									<div class="project-description ">
-										<h3 class="project-titel uppercase">Settlers of Catan</h3>
-										<p>
-											An augmented version of the tabletop game <em>Settlers of Catan</em>
-										</p>
-									</div>
-									<span class="project-caption uppercase">Augmented Reality</span>
-								</li>
-								<li class="project-3">
-									<span class="project-overlay"></span>
-									<div class="project-description">
-										<h3 class="project-titel uppercase">Beliar</h3>
-										<p>
-											A prototyp of a <em>Dungeon&Dragons</em> inspired singleplayer game
-										</p>
-									</div>
-									<span class="project-caption uppercase">Game Development</span>
-								</li>
-								<li class="project-4">
-									<span class="project-overlay"></span>
-									<div class="project-description">
-										<h3 class="project-titel uppercase">Media Informatics Showroom</h3>
-										<p>
-											A multitouch application offering multimedia information about student projects
-										</p>
-									</div>
-									<span class="project-caption uppercase">Multitouch Table</span>
-								</li>
-								<li class="project-5">
-									<span class="project-overlay"></span>
-									<div class="project-description">
-										<h3 class="project-titel uppercase">Music in the Air</h3>
-										<p>
-											A <em>Microsoft Kinect</em> game which allows the user to pratice and play different instruments
-										</p>
-									</div>
-									<span class="project-caption uppercase">Interaction Design</span>
-								</li>
-								<li class="project-6">
-									<span class="project-overlay"></span>
-									<div class="project-description">
-										<h3 class="project-titel uppercase">All Projects</h3>
-										<p>
-											You can view all projects here
-										</p>
-									</div>
-									<span class="project-caption uppercase"></span>
-								</li>
+								<a href="projects.php?project=1">
+									<li class="project-1">
+										<span class="project-overlay"></span>
+										<div class="project-description">
+											<h3 class="project-titel uppercase">Latrinalia</h3>
+											<p>
+												A responsive platform to share and comment on toilet graffiti
+											</p>
+										</div>
+										<span class="project-caption uppercase">Webdesign</span>
+									</li>
+								</a>
+								<a href="projects.php?project=2">
+									<li class="project-2">
+										<span class="project-overlay"></span>
+										<div class="project-description ">
+											<h3 class="project-titel uppercase">Settlers of Catan</h3>
+											<p>
+												An augmented version of the tabletop game <em>Settlers of Catan</em>
+											</p>
+										</div>
+										<span class="project-caption uppercase">Augmented Reality</span>
+									</li>
+								</a>
+								<a href="projects.php?project=3">
+									<li class="project-3">
+										<span class="project-overlay"></span>
+										<div class="project-description">
+											<h3 class="project-titel uppercase">Beliar</h3>
+											<p>
+												A prototyp of a <em>Dungeon&Dragons</em> inspired singleplayer game
+											</p>
+										</div>
+										<span class="project-caption uppercase">Game Development</span>
+									</li>
+								</a>
+								<a href="projects.php?project=4">
+									<li class="project-4">
+										<span class="project-overlay"></span>
+										<div class="project-description">
+											<h3 class="project-titel uppercase">Media Informatics Showroom</h3>
+											<p>
+												A multitouch application offering multimedia information about student projects
+											</p>
+										</div>
+										<span class="project-caption uppercase">Multitouch Table</span>
+									</li>
+								</a>
+								<a href="projects.php?project=5">
+									<li class="project-5">
+										<span class="project-overlay"></span>
+										<div class="project-description">
+											<h3 class="project-titel uppercase">Music in the Air</h3>
+											<p>
+												A <em>Microsoft Kinect</em> game which allows the user to pratice and play different instruments
+											</p>
+										</div>
+										<span class="project-caption uppercase">Interaction Design</span>
+									</li>
+								</a>
+								<a href="projects.php?project=1">
+									<li class="project-6">
+										<span class="project-overlay"></span>
+										<div class="project-description">
+											<h3 class="project-titel uppercase">All Projects</h3>
+											<p>
+												You can view all projects here
+											</p>
+										</div>
+										<span class="project-caption uppercase"></span>
+									</li>
+								</a>
 								<div class="clear"></div>
 								<!--
 								<p class="github"><span class="uppercase highlight">Chin check out some code</span>You can also check the code of some of these projects and other minor projects and works including this portfolio site on my <span class="primary-light"><a href="https://github.com/CrazyCrud"><strong>GitHub</strong></a></span> account!
