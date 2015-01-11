@@ -203,9 +203,11 @@ if($email != false && $message != false && $captcha != false){
 									<span class="project-caption uppercase"></span>
 								</li>
 								<div class="clear"></div>
+								<!--
 								<p class="github"><span class="uppercase highlight">Chin check out some code</span>You can also check the code of some of these projects and other minor projects and works including this portfolio site on my <span class="primary-light"><a href="https://github.com/CrazyCrud"><strong>GitHub</strong></a></span> account!
 									</br><span class="icon-github"></span>
 								</p>
+								-->
 							</ul>
 						</div>
 					</article>

@@ -10,5 +10,14 @@ function get_project($id, $ajax){
 	}
 }
 
+function get_max_projects(){
+	$files = glob("php/projects/" . "*.json");
+	if ($files){
+		$filecount = count($files);
+	}else{
+		$filecount = 1;
+	}
+	return $filecount;
+}
 
 ?>

@@ -2,12 +2,16 @@
 
 require_once 'php/ProjectController.php';
 
-$project_id = 1;
+$project_id = $next = $prev = 1;
+$projects_max = get_max_projects();
 if(isset($_GET['project'])){
 	$project_id = intval(htmlentities($_GET['project']));
 }
 
 $project = get_project($project_id, false);
+
+$next = ($project_id + 1) > $projects_max? 1: ($project_id + 1);
+$prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 
 ?>
 
@@ -36,7 +40,7 @@ $project = get_project($project_id, false);
 		<div class="nav-sticky">
 			<nav class="top-bar">
 				<ul class="title-bar">
-					<li class="project-name-nav uppercase">Project Name</li>
+					<li class="project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
 					<li class="toggle-nav" class="uppercase">
 						<a href="#"></a>
 					</li>
@@ -44,9 +48,9 @@ $project = get_project($project_id, false);
 				<section class="top-bar-section">
 					<ul>
 						<li class="top-bar-item home uppercase"><a id="link-home" href="index.php">Home</a></li>
-						<li class="top-bar-item uppercase"><a id="link-prev" href="#">Prev</a></li>
-						<li class="top-bar-item project-name-nav uppercase">Project Name</li>
-						<li class="top-bar-item uppercase"><a id="link-next" href="#">Next</a></li>
+						<li class="top-bar-item uppercase"><a id="link-prev" href="projects.php?project=<?php echo "$prev" ?>">Prev</a></li>
+						<li class="top-bar-item project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
+						<li class="top-bar-item uppercase"><a id="link-next" href="projects.php?project=<?php echo "$next" ?>">Next</a></li>
 						<div class="clear"></div>
 					</ul>
 				</section>
