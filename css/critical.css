@@ -75,7 +75,7 @@ a.dest{ height: 0px; width: 0px; }
 .skills-content li .skill-text-container{ padding-top: 0px; padding-right: 1.333em; padding-bottom: 0px; padding-left: 1.333em; }
 }
  .projects-content li .project-caption{ display: block; }
-.projects-content li .project-overlay{ position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(28, 25, 44); opacity: 0.4; z-index: -1; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; background-position: initial initial; background-repeat: initial initial; }
+.projects-content li .project-overlay{ position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(28, 25, 44); opacity: 0.6; z-index: -1; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; background-position: initial initial; background-repeat: initial initial; }
 .projects-content li .project-description{ display: block; padding-top: 0.75em; padding-right: 0px; padding-bottom: 0.75em; padding-left: 0.8em; pointer-events: none; }
 .projects-content li .project-description h3{ font-family: SteagalLight; font-weight: 200; letter-spacing: 0.422em; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; }
 .projects-content li .project-description p{ line-height: 1.422em; }

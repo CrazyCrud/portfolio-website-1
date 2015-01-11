@@ -1,0 +1,11 @@
+{
+    "project": {
+        "name": "Latrinalia",
+        "goal": "",
+        "summary": "",
+        "date": "2014",
+        "header-image": ["small", "large"],
+        "techniques": ["HTML", "CSS", "JavaScript"],
+        "screenshots": [""]
+    }
+}

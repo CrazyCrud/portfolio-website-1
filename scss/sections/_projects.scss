@@ -1,0 +1,16 @@
+.project-date-header{
+	margin: 0 auto;
+	font-size: $negative_2;
+}
+
+.project{
+	max-width: 60em;
+	margin: 0 auto;
+	section{
+		padding: 0 $positive_1;
+	}
+
+	.techniques-list{
+		list-style: disc;
+	}
+}

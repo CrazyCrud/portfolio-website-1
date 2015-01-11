@@ -31,7 +31,7 @@ if($email != false && $message != false && $captcha != false){
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio of Constantin Lehenmeier</title>
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script type="text/javascript" src="js/vendor/modernizr.js"></script>
 	<script type="text/javascript">
 		Modernizr.load([
@@ -39,11 +39,11 @@ if($email != false && $message != false && $captcha != false){
 				test : Modernizr.mq('only all'),
 				nope : ['js/vendor/respond.js']
 			},
-			'js/production.js'
+			'js/home.js'
 		]);
 	</script>
 	<noscript>
-		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
 	</noscript>
 </head>
 <body>

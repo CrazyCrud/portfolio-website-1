@@ -30,12 +30,11 @@
 	padding: 0;
 	list-style: none;
 
-	.logo{
-		position: absolute;
-		left: 1em;
-		top: 6px;
+	.project-name-nav{
+		position: relative;
+		padding-left: 1em;
 		color: $black;
-		font-size: $negative_3;
+		font-weight: 700;
 		line-height: 60px;
 	}
 
@@ -84,7 +83,7 @@
 			}
 		}
 
-		li.divider{
+		li.divider, li.project-name-nav{
 			height: 0;
 			width: 0;
 			display: none;
@@ -115,7 +114,7 @@
 			display: inline-block;
 			width: auto;
 			max-width: 40em;
-			li, li.divider{
+			li, li.divider, li.project-name-nav{
 				display: block;
 				float: left;
 				border: none;
@@ -141,6 +140,19 @@
 				width: $positive_6;
 				height: 68px;
 			}
+			li.project-name-nav{
+				height: auto;
+				width: auto;
+				padding: 0 $positive_1;
+			}
+			li.project-name-nav:hover{
+				background-color: white;
+				border: none;
+			}
+			.home{
+				position: absolute;
+				left: 1em;
+			}
 		}
 	}
 	.title-bar{
@@ -152,6 +164,12 @@
 			width: 0;
 			height: 0;
 		}
+
+		.project-name-nav{
+			width: 0;
+			height: 0;
+			display: none;
+		}
 	}
 }
 
@@ -160,6 +178,9 @@
 		ul{
 			li.divider{
 				width: $positive_10;
+			}
+			li.project-name-nav{
+				padding: 0 $positive_4;
 			}
 		}
 	}

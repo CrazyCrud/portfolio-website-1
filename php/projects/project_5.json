@@ -1,0 +1,10 @@
+{
+    "latrinalia": {
+        "name": "Latrinalia",
+        "goal": "",
+        "summary": "",
+        "header-image": ["small", "large"],
+        "techniques": ["HTML", "CSS", "JavaScript"],
+        "screenshots": [""]
+    }
+}

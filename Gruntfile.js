@@ -11,7 +11,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/app.css': 'scss/app.scss'
+                    'css/home.css': 'scss/home.scss',
+                    'css/projects.css': 'scss/projects.scss'
                 }
             }
         },
@@ -20,7 +21,7 @@ module.exports = function(grunt) {
             
             },
             no_dest: {
-                src: 'css/app.css'
+                src: 'css/home.css'
             },
         },
         concat: {
@@ -28,10 +29,14 @@ module.exports = function(grunt) {
               separator: ';',
               stripBanners: true,
             },
-            dist: {
-              src: ['js/vendor/jquery.js', 'js/vendor/skrollr.js', 'js/vendor/tappy.js', 'js/pages/home.js', 'js/pages/projects.js', 'js/app.js'],
-              dest: 'js/production.js',
+            home: {
+              src: ['js/vendor/jquery.js', 'js/vendor/skrollr.js', 'js/vendor/tappy.js', 'js/app.js', 'js/sections/home.js'],
+              dest: 'js/home.js',
             },
+            project: {
+                src: ['js/vendor/jquery.js', 'js/vendor/skrollr.js', 'js/vendor/tappy.js', 'js/app.js', 'js/sections/project.js'],
+                dest: 'js/project.js',
+            }
         },
         criticalcss: {
             custom_options:{
@@ -57,7 +62,7 @@ module.exports = function(grunt) {
                 },
             },
             scripts: {
-                files: ['js/vendor/jquery.js', 'js/app.js'],
+                files: ['js/vendor/jquery.js', 'js/app.js', 'js/sections/home.js', 'js/sections/projects.js'],
                 tasks: ['concat'],
                 options: {
                   spawn: true,
