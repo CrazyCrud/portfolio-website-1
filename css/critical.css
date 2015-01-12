@@ -62,7 +62,6 @@ a.dest{ height: 0px; width: 0px; }
 .skills-content{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: center; }
 .skills-content li{ display: block; width: 100%; margin-bottom: 3.157em; }
 .skills-content .skill-icon-container{ display: block; position: relative; width: 100%; }
-.skills-content .skill-text-container{ position: relative; }
 .skills-content .skill-text-container h3{ margin-top: 0px; }
 .skills-content .skill-text-container p{ line-height: 1.422em; }
 .skills-content .skill-icon{ display: inline-block; width: 100px; height: 100px; }
@@ -72,7 +71,6 @@ a.dest{ height: 0px; width: 0px; }
 @media screen and (min-width: 58em){
 .skills-content{ max-width: 70em; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; }
 .skills-content li{ display: block; float: left; width: 33%; margin-bottom: 0px; }
-.skills-content li .skill-text-container{ padding-top: 0px; padding-right: 1.333em; padding-bottom: 0px; padding-left: 1.333em; }
 }
  .projects-content li .project-caption{ display: block; }
 .projects-content li .project-overlay{ position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(28, 25, 44); opacity: 0.6; z-index: -1; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: initial; -webkit-transition-delay: initial; background-position: initial initial; background-repeat: initial initial; }

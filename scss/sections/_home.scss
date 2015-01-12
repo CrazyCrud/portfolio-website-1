@@ -210,7 +210,7 @@
 			h3{
 				font-family: $default_light;
 				font-weight: 200;
-				letter-spacing: $negative_6;
+				//letter-spacing: $negative_6;
 				transition: all 0.3s;
 			}
 			p{
@@ -239,7 +239,7 @@
 		}
 		.project-description{
 			h3{
-				letter-spacing: $negative_9;
+				//letter-spacing: $negative_9;
 			}
 		}
 	}
@@ -273,6 +273,19 @@
 		li{
 			width: 50%;
 			float: left;
+			.project-description{
+				h3{
+					letter-spacing: $negative_6;
+				}
+				
+			}
+		}
+		li:hover{
+			.project-description{
+				h3{
+					letter-spacing: $negative_9;
+				}
+			}
 		}
 	}
 }
