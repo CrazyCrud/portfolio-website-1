@@ -341,7 +341,7 @@ if($email != false && $message != false && $captcha != false){
 				</section>
 			</div>
 			<footer class="footer">
-				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Pedro Sanchez</p>
+				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Wilson Joseph, Blake Thompson and Don Patino</p>
 			</footer>
 		</div>
 	</div>

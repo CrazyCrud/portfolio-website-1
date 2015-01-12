@@ -117,7 +117,7 @@
 
 .js .projects-content.load{
 	.project-1{
-		background: url('img/latrinalia.png') left top no-repeat scroll;
+		background: url('img/latrinalia.jpg') left top no-repeat scroll;
 	} 
 
 	.project-2{
@@ -143,7 +143,7 @@
 
 .no-js .projects-content{
 	.project-1{
-		background: url('img/latrinalia.png') left top no-repeat scroll;
+		background: url('img/latrinalia.jpg') left top no-repeat scroll;
 	} 
 
 	.project-2{
@@ -186,7 +186,7 @@
 		overflow: hidden;
 		z-index: 0;
 		cursor: pointer;
-		background-size: cover !important;
+		//background-size: cover !important;
 		.project-image, .project-caption{
 			display: block;
 		}
