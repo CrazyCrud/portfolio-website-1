@@ -58,7 +58,7 @@ if($email != false && $message != false && $captcha != false){
 				</ul>
 				<section class="top-bar-section">
 					<ul>
-						<li class="top-bar-item uppercase"><a id="link-skills" href="#skills">Skills</a></li>
+						<li class="top-bar-item uppercase"><a id="link-skills" href="#skills">Services</a></li>
 						<li class="top-bar-item uppercase"><a id="link-projects" href="#projects">Projects</a></li>
 						<li class="top-bar-item divider"></li>
 						<li class="top-bar-item uppercase"><a id="link-about" href="#about">About</a></li>
@@ -73,7 +73,7 @@ if($email != false && $message != false && $captcha != false){
 			<div class="header-text">
 				<h2>Hello!</h2>
 				<p class="uppercase">
-					My Name is <span class="primary-light">Constantin Lehenmeier</span>, I&#39;m a web enthusiast and a weekend programmer from Germany.
+					My Name is <span class="primary-light">Constantin Lehenmeier</span>, I&#39;m a web enthusiast and a daily programmer from Germany.
 					</br>And I make cool shit for cool people!
 				</p>			
 			</div>
@@ -85,7 +85,7 @@ if($email != false && $message != false && $captcha != false){
 					<article>
 						<header class="header-section">
 							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Skillset</span>
+							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Services</span>
 						</header>
 						<div class="skills-content-container">
 							<ul class="skills-content">
@@ -269,7 +269,7 @@ if($email != false && $message != false && $captcha != false){
 									While I attended the course of media and computer science I worked at the IT branch of the university's library.</br>
 								</p>
 								<div class="what">
-									<h5 class="uppercase">Backend-Work</h5>
+									<h5 class="uppercase">Backend Development</h5>
 									<p>
 										I redesigned the strcuture and organization of few <strong>mySQL</strong> databases and their connection to the frontend.
 									</p>
@@ -282,7 +282,7 @@ if($email != false && $message != false && $captcha != false){
 								<div class="what">
 									<h5 class="uppercase">Responsive Refactoring</h5>
 									<p>
-										I was involved in the <strong>responsive</strong> redesign of a digital magazine library.
+										I was involved in the <strong>responsive</strong> redesign of the website of a digital magazine library.
 									</p>
 								</div>
 								<div class="when">
@@ -297,7 +297,7 @@ if($email != false && $message != false && $captcha != false){
 								<p class="interests">
 									Besides designing and developing things, I'm a <strong>music</strong> enthusiast in collecting, listening and creating - not so listenable - music.
 									I spent a lot of time creating and tweaking sounds in <em>Ableton</em> and sampling obscure sources; I'm always searching for new and innovative music.</br> 
-									When I'm not listening to music I'm trying to get my head around the history and the evolution of type. For a few years I have been reading all influential books about <strong>typography</strong> which is a never ending venture.
+									Besides that I'm trying to get my head around the history and the evolution of <strong>typography</strong>. For a few years I have been trying to get a sense and feeling for type and studied a wide range of books about typography which is a never ending venture.
 								</p>
 							</section>
 							
