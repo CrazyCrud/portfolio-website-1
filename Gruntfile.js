@@ -34,7 +34,7 @@ module.exports = function(grunt) {
               dest: 'js/home.js',
             },
             project: {
-                src: ['js/vendor/jquery.js', 'js/vendor/skrollr.js', 'js/vendor/tappy.js', 'js/app.js', 'js/sections/project.js'],
+                src: ['js/vendor/jquery.js', 'js/vendor/skrollr.js', 'js/vendor/tappy.js', 'js/vendor/animsition.js','js/app.js', 'js/sections/projects.js'],
                 dest: 'js/project.js',
             }
         },

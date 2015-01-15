@@ -4,7 +4,8 @@
 }
 
 .project{
-	max-width: 60em;
+	line-height: $positive_4;
+	max-width: 46em;
 	margin: 0 auto;
 	section{
 		padding: 0 $positive_1;
@@ -12,5 +13,10 @@
 
 	.techniques-list{
 		list-style: disc;
+	}
+
+	a{
+		color: $primary_light;
+		text-decoration: none;
 	}
 }

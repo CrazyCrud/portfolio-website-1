@@ -49,7 +49,7 @@ body{
 	cursor: default;
 	background: $background; 
 	background: url('img/texture.jpg') repeat;
-	color: white;
+	color: $text;
 	box-sizing: border-box;
 	font-family: $default_regular;
 	font-weight: 400; 
@@ -73,8 +73,8 @@ h3{
 	font-size: $positive_2;
 }
 
-h4{
-	font-size: 1em;
+h4, h5{
+	font-size: $positive_1;
 }
 
 ul{
@@ -137,17 +137,44 @@ a.dest{
 	background: url('img/header_small.png') center -6% no-repeat fixed;
 	z-index: 1;
 	overflow: hidden;
+	color: white;
+}
+
+.line{
+	display: block;
+	width: 0;
+	position: relative;
+	margin: 0 auto;
+	height: 0;
+	top: 70px;
+	border-top: 2px solid #18131e;
+	border-bottom: 2px solid #2f2a33;
+	z-index: -1;
 }
 
 @media screen and (min-width: $header_medium){
 	.header{
 		background: url('img/header_large.png') center -6% no-repeat fixed;
 	}
+
+	.line{
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: $skills_breakpoint){
 	.header{
 		font-size: $positive_3;
+	}
+
+	.line{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 110em){
+	.line{
+		width: 62%;
 	}
 }
 

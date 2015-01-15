@@ -35,7 +35,7 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 		<link rel="stylesheet" type="text/css" href="css/projects.css">
 	</noscript>
 </head>
-<body>
+<body class="animsition">
 	<div class="index projects">
 		<div class="nav-sticky">
 			<nav class="top-bar">
@@ -47,10 +47,10 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 				</ul>
 				<section class="top-bar-section">
 					<ul>
-						<li class="top-bar-item home uppercase"><a id="link-home" href="index.php">Home</a></li>
-						<li class="top-bar-item uppercase"><a id="link-prev" href="projects.php?project=<?php echo "$prev" ?>">Prev</a></li>
+						<li class="top-bar-item home uppercase"><a id="link-home" class="animsition-link" href="index.php">Home</a></li>
+						<li class="top-bar-item uppercase"><a id="link-prev" class="animsition-link" href="projects.php?project=<?php echo "$prev" ?>">Prev</a></li>
 						<li class="top-bar-item project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
-						<li class="top-bar-item uppercase"><a id="link-next" href="projects.php?project=<?php echo "$next" ?>">Next</a></li>
+						<li class="top-bar-item uppercase"><a id="link-next" class="animsition-link" href="projects.php?project=<?php echo "$next" ?>">Next</a></li>
 						<div class="clear"></div>
 					</ul>
 				</section>
@@ -87,15 +87,18 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 					</p>
 				</section>
 				<section class="screenshots">
-					<h3>Screenshots</h3>
+					<h3>Development Process</h3>
 					<ul class="screenshots-list"></ul>
 				</section>
 				<section class="demo">
 					<h3>Demo</h3>
+					<p>
+						<?php echo "{$project['project']['demo']}"; ?>
+					</p>
 				</section>
 			</div>
 			<footer class="footer">
-				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Pedro Sanchez</p>
+				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Wilson Joseph, Blake Thompson and Don Patino</p>
 			</footer>
 		</div>
 	</div>

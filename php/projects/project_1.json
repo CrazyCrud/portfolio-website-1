@@ -1,11 +1,12 @@
 {
     "project": {
         "name": "Latrinalia",
-        "goal": "",
-        "summary": "",
+        "goal": "The main intention of this site was to collect as much data as possible due to a crowdsourcing strategy!",
+        "summary": "A Crowdsourced Approach for the Documentation and Transcription of <span class='primary-light'>Graffiti</span> in Public Restrooms",
         "date": "2014",
         "header-image": ["small", "large"],
-        "techniques": ["HTML", "CSS", "JavaScript"],
-        "screenshots": [""]
+        "techniques": ["HTML", "CSS", "JavaScript", "Grunt", "Photoshop"],
+        "screenshots": [""],
+        "demo": "<a href='www.latrinalia.de'>Visit the website!</a>"
     }
 }

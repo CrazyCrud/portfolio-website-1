@@ -1,11 +1,11 @@
 {
     "project": {
-        "name": "Latrinalia",
+        "name": "Beliar",
         "goal": "",
-        "summary": "",
-        "date": "2014",
+        "summary": "A prototypical RPG game inspired by the Dungeon&Dragons series",
+        "date": "2013",
         "header-image": ["small", "large"],
-        "techniques": ["HTML", "CSS", "JavaScript"],
+        "techniques": ["JAVA", "JMonkey"],
         "screenshots": [""]
     }
 }

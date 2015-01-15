@@ -84,8 +84,11 @@ if($email != false && $message != false && $captcha != false){
 				<section>
 					<article>
 						<header class="header-section">
-							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Services</span>
+							<div class="line"></div>
+							<h2>
+								My
+								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Services</span>
+							</h2>
 						</header>
 						<div class="skills-content-container">
 							<ul class="skills-content">
@@ -137,8 +140,11 @@ if($email != false && $message != false && $captcha != false){
 				<section>
 					<article>
 						<header class="header-section">
-							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Projects</span>
+							<div class="line"></div>
+							<h2>
+								My
+								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Projects</span>
+							</h2>
 						</header>
 						<div class="projects-content-container">
 							<ul class="projects-content">
@@ -230,8 +236,11 @@ if($email != false && $message != false && $captcha != false){
 				<section>
 					<article>
 						<header class="header-section">
-							<h2>My</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Self &#38; I</span>
+							<div class="line"></div>
+							<h2>
+								My
+								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Self &#38; I</span>
+							</h2>
 						</header>
 						<div class="about-content-container">
 							<section>
@@ -250,7 +259,7 @@ if($email != false && $message != false && $captcha != false){
 								<div class="what">
 									<h5 class="uppercase">Academic Studies in Media and Computer Science</h5>
 									<p>
-										In the terms of my study in Ratisbon, Germany I received an extensive as well as far-reaching teaching in the field of the human-computer-interaction.</br>
+										In the terms of my study in Ratisbon, Germany I received an extensive as well as far-reaching teaching in the field of the human-computer-interaction.
 										I aquired knowledge and pratical skills in working areas like <strong>interaction design</strong>, <strong>media development</strong> and <strong>software development</strong>.
 										</br>Also I was teached in the basics of <strong>project management</strong> and learned about ways to tackle problems and obstacles.
 										I learned to work and communicate with other people and developed a love-hate relationship with my laptop. 
@@ -293,12 +302,14 @@ if($email != false && $message != false && $captcha != false){
 								<div class="clear"></div>
 							</section>
 							<section>
+								<!--
 								<h3 class="highlight">Interests</h3>
 								<p class="interests">
 									Besides designing and developing things, I'm a <strong>music</strong> enthusiast in collecting, listening and creating - not so listenable - music.
 									I spent a lot of time creating and tweaking sounds in <em>Ableton</em> and sampling obscure sources; I'm always searching for new and innovative music.</br> 
 									Besides that I'm trying to get my head around the history and the evolution of <strong>typography</strong>. For a few years I have been trying to get a sense and feeling for type and studied a wide range of books about typography which is a never ending venture.
 								</p>
+								-->
 							</section>
 							
 						</div>
@@ -310,8 +321,10 @@ if($email != false && $message != false && $captcha != false){
 				<section>
 					<article>
 						<header class="header-section">
-							<h2>Your</h2>
-							<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.2) rotate(-6deg);">Questions</span>
+							<div class="line"></div>
+								<h2>Your
+								<span class="headline" data-0="transform: scale(1) rotate(-22deg);" data-top="transform: scale(1.2) rotate(-6deg);">Questions</span>
+							</h2>
 						</header>
 							<form id="contact" name="contact" method="post" action="index.php#contact">
 								<fieldset>

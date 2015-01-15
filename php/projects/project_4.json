@@ -1,11 +1,11 @@
 {
     "project": {
-        "name": "Latrinalia",
+        "name": "Media Informatics Showroom",
         "goal": "",
         "summary": "",
         "date": "2014",
         "header-image": ["small", "large"],
-        "techniques": ["HTML", "CSS", "JavaScript"],
+        "techniques": ["C#", "Microsoft Surface", "XAML", "MySQL"],
         "screenshots": [""]
     }
 }

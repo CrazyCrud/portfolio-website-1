@@ -1,11 +1,11 @@
 {
     "project": {
-        "name": "Latrinalia",
+        "name": "Music in the Air",
         "goal": "",
         "summary": "",
-        "date": "2014",
+        "date": "2013",
         "header-image": ["small", "large"],
-        "techniques": ["HTML", "CSS", "JavaScript"],
+        "techniques": ["C#", "Blender", "Photoshop"],
         "screenshots": [""]
     }
 }

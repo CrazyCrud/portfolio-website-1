@@ -7,22 +7,15 @@
 
 	h2{
 		display: inline-block;
-	}
-
-	.line{
-		position: relative;
-		width: 50%;
-		margin: 0 auto;
-		top: -50px;
-		border-top: 2px solid #18131e;
-		border-bottom: 2px solid #2f2a33;
-		z-index: -1;
+		background: $background; 
+		background: url('img/texture.jpg') repeat; 
+		padding: 0 $positive_1;
 	}
 }
 
 .headline{
 	display: block;
-	margin-top: -62px;
+	margin-top: -40px;
 	font-size: $positive_6;
 	font-family: $script;
 	font-weight: 400; 
@@ -75,7 +68,7 @@
 			margin-top: 0;
 		}
 		p{
-			line-height: $positive_3;
+			line-height: $positive_4;
 		}
 	}
 
@@ -175,7 +168,7 @@
 	padding: 0;
 	a{
 		text-decoration: none;
-		color: white !important;
+		color: $text !important;
 	}
 	li{
 		display: block;
@@ -215,6 +208,7 @@
 			}
 			p{
 				line-height: $positive_3;
+				color: white;
 			}
 		}
 
@@ -335,13 +329,13 @@
 }
 
 .about article{
-	max-width: 60em;
 	margin: 0 auto;
 }
 
 .about-content-container{
 	text-align: center;
-
+	max-width: 60em;
+	margin: 0 auto;
 	section{
 		display: block;
 		margin-top: $positive_6;
@@ -352,7 +346,7 @@
 		}
 
 		p{
-			line-height: $positive_3;
+			line-height: $positive_4;
 		}
 	}
 
@@ -373,7 +367,7 @@
 	.about-content-container{
 		section {
 			p{
-				line-height: $positive_5;
+				line-height: $positive_6;
 			}
 		}
 		.what{
@@ -392,6 +386,9 @@
 				margin-top: 0.6em;
 			}
 		}
+		.interests{
+
+		}
 	}
 }
 
@@ -399,6 +396,7 @@
 	.about-content-container{
 		.interests{
 			text-align: left;
+			margin-right: 18%;
 		}
 	}
 }
@@ -438,7 +436,7 @@
 		width: 100%;
 		margin: 0;
 		margin-bottom: $positive_4;
-		color: white;
+		color: $text;
 		background-color: transparent;
 		padding: $negative_2 $positive_1 $negative_2 0;
 		border: none;
@@ -449,7 +447,7 @@
 
 	#number-1, #number-2{
 		text-align: center;
-		color: white;
+		color: $text;
 		background-color: transparent;
 		border: none;
 	}

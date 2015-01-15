@@ -1,11 +1,12 @@
 {
     "project": {
-        "name": "Latrinalia",
+        "name": "Settlers of Catan",
         "goal": "",
-        "summary": "",
+        "summary": "An augmented version of the table top game Settlers of Catan using a Microsoft Kinect",
         "date": "2014",
         "header-image": ["small", "large"],
-        "techniques": ["HTML", "CSS", "JavaScript"],
-        "screenshots": [""]
+        "techniques": ["JAVA", "Photoshop"],
+        "screenshots": [""],
+        "demo": ""
     }
 }
