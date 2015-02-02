@@ -1,11 +1,12 @@
 {
     "project": {
         "name": "Media Informatics Showroom",
-        "goal": "",
-        "summary": "",
+        "goal": "As to show the freshman who are studying the media informatics courses at the university in Ratisbon what projects have been done in the past by students or what they will be able after graduation a multitouch application was developed by two colleagues and me.",
+        "summary": "An informatory <span class='primary-light'>multitouch table application</span> for first-year students",
         "date": "2014",
         "header-image": ["small", "large"],
-        "techniques": ["C#", "Microsoft Surface", "XAML", "MySQL"],
-        "screenshots": [""]
+        "functionality": "On the one side the data should be easly and continuously added by professors and academics and on the other side this data should be formated in such a way that users can brwose through information in a playful manner.</br>We build a intern <strong>web application</strong> which allows academics to add all relevant data about themselves and their courses and students to add their projects. All these information is accessible by the multitouch application which allows multiple users to scan and brwose the data by using <strong>tangibles</strong> and <strong>touch gestures</strong>.",
+        "process": "<h4>Sketching</h4><p><picture><source media='(min-width: 32em)' srcset='assets/img/showroom/sketch_1_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/showroom/sketch_1_small.jpg'><img srcset='assets/img/showroom/sketch_1_small.jpg' alt='Ingame picture'></picture></p><h4>High Fidelity Prototyp</h4><p>As in other projects the high fidelity prototyp was created with <strong>Axure</strong> which allowed our group to quickly develop a functional prototyp without a deep understanding of the actual hardware enviroment - the <em>Microsoft Surface</em>. Because of this first user tests could be conducted at an early stage of the project development. </p><h4>Implementation</h4><ul><li>C#</li><li>XAML</li><li>MySQL</li></ul><h4>Usability Testing</h4><p>Although user tests were executed after every milestone, the final product was tested by a large amount of participants to make sure that the ways of interaction were clear enough at the time a user interacts with the application the first time.</p>",
+        "demo": "<picture><source media='(min-width: 32em)' srcset='assets/img/showroom/showroom_1_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/showroom/showroom_1_small.jpg'><img srcset='assets/img/showroom/showroom_1_small.jpg' alt='Ingame picture'></picture>"
     }
 }

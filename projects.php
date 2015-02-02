@@ -28,6 +28,7 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 				test : Modernizr.mq('only all'),
 				nope : ['js/vendor/respond.js']
 			},
+			'js/vendor/picturefill.js',
 			'js/project.js'
 		]);
 	</script>
@@ -76,19 +77,17 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 						<?php echo "{$project['project']['goal']}" ?>
 					</p>
 				</section>
-				<section class="techniques">
-					<h3>Techniques</h3>
+				<section class="functionality">
+					<h3>Functionality</h3>
 					<p>
-						<ul class="techniques-list">
-							<?php foreach ($project['project']['techniques'] as $technique) {
-								echo "<li>$technique</li>";
-							} ?>
-						</ul>
+						<?php echo "{$project['project']['functionality']}"; ?>
 					</p>
 				</section>
-				<section class="screenshots">
+				<section class="process">
 					<h3>Development Process</h3>
-					<ul class="screenshots-list"></ul>
+					<p>
+						<?php echo "{$project['project']['process']}"; ?>
+					</p>
 				</section>
 				<section class="demo">
 					<h3>Demo</h3>
@@ -98,7 +97,6 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 				</section>
 			</div>
 			<footer class="footer">
-				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Wilson Joseph, Blake Thompson and Don Patino</p>
 			</footer>
 		</div>
 	</div>

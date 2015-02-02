@@ -1,11 +1,12 @@
 {
     "project": {
         "name": "Beliar",
-        "goal": "",
-        "summary": "A prototypical RPG game inspired by the Dungeon&Dragons series",
+        "goal": "<em>Beliar</em> was developed during a computer graphics course and is therefore more a graphical prototyp than an actual game.",
+        "summary": "A prototypical <span class='primary-light'>RPG game</span> inspired by the Dungeon Keeper series",
         "date": "2013",
         "header-image": ["small", "large"],
-        "techniques": ["JAVA", "JMonkey"],
-        "screenshots": [""]
+        "functionality": " Allthough it is a grapical prototyp, <em>Beliar</em> contains all basic principles and functionality of a classic RPG game including the <strong>creation of buildings</strong>, the <strong>farming of resources</strong> and the <strong>order of units</strong>.",
+        "process": "<h4>Sketching</h4><p>Besides the user interface the game mechanics such as the units, the resources and the buildings needed to be sketched.</p></p><h4>Implementation</h4><ul><li>JAVA</li><li>Blender</li><li>Ableton</li><li>Photoshop</li>",
+        "demo": "</picture><picture><source media='(min-width: 32em)' srcset='assets/img/beliar/beliar_1_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/beliar/beliar_1_small.jpg'><img srcset='assets/img/beliar/beliar_1_small.jpg' alt='Ingame picture'></picture>"
     }
 }

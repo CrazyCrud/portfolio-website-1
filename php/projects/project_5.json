@@ -2,10 +2,11 @@
     "project": {
         "name": "Music in the Air",
         "goal": "",
-        "summary": "",
+        "summary": "A game to teach you who to <span class='primary-light'>play instruments</span> without owning one",
         "date": "2013",
         "header-image": ["small", "large"],
-        "techniques": ["C#", "Blender", "Photoshop"],
-        "screenshots": [""]
+        "functionality": "",
+        "process": "<h4>Sketching</h4><p></p><h4>High Fidelity Prototyp</h4><p></p><h4>Implementation</h4><ul><li>C#</li><li>Blender</li><li>Photoshop</li></ul><h4>Usability Testing</h4><p></p>",
+        "demo": "<picture><source media='(min-width: 32em)' srcset='assets/img/music/music_1_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/music/music_1_small.jpg'><img srcset='assets/img/music/music_1_small.jpg' alt='Ingame picture'></picture><picture><source media='(min-width: 32em)' srcset='assets/img/music/music_2_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/music/music_2_small.jpg'><img srcset='assets/img/music/music_2_small.jpg' alt='Ingame picture'></picture>"
     }
 }

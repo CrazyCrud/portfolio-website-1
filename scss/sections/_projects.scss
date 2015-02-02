@@ -4,19 +4,37 @@
 }
 
 .project{
+	ul{
+		//margin-left: 0;
+		//padding-left: 0;
+		list-style: disc;
+	}
 	line-height: $positive_4;
 	max-width: 46em;
 	margin: 0 auto;
 	section{
 		padding: 0 $positive_1;
 	}
-
-	.techniques-list{
-		list-style: disc;
+	.process{
+		
 	}
 
 	a{
 		color: $primary_light;
 		text-decoration: none;
 	}
+
+	img{
+		display: block;
+		overflow: hidden;
+		margin: $positive_1 auto;
+	}
 }
+
+picture{
+	display: block;
+	overflow: hidden;
+	margin: $positive_1 auto;
+}
+
+

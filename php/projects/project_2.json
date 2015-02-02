@@ -1,12 +1,12 @@
 {
     "project": {
         "name": "Settlers of Catan",
-        "goal": "",
-        "summary": "An augmented version of the table top game Settlers of Catan using a Microsoft Kinect",
+        "goal": "As part of my bachelor degree I developed a prototypical augmented version of <em>The Settlers of Catan</em> by combining a <em>Microsoft Kinect</em> and LCD projector. The goal was it to evaluate if the augmented version of the game was more fun than the original version or if the augmented information had no effects on the player's perception of the game.",
+        "summary": "An <span class='primary-light'>augmented version</span> of the table top game Settlers of Catan",
         "date": "2014",
         "header-image": ["small", "large"],
-        "techniques": ["JAVA", "Photoshop"],
-        "screenshots": [""],
-        "demo": ""
+        "functionality": "The main purpose of the augmented information is <em>not</em> to influence the gameplay but to reduce the cognitive work of the players caused by repetive tasks.</br>The augmented version helps the players in the following cases: <ul><li>counting points</li><li>visualizing basic game rules</li><li>marking special events like the robber</li></ul>",
+        "process": "<h4>Setup</h4><p>Before starting the development different setups had to be evaluated as with the <em>Kinect</em> it is very difficult to track tiny objects like pawns. Due to that the best angle and distance had to be found before actual software development.</p></p><h4>Implementation</h4><ul><li>JAVA</li><li>Processing</li><li>Photoshop</li></ul><h4>Evaluation</h4>The hyopthesis that the augmented version is more valuable without causing negative effects on the gameplay had to be evaluated by conducting test games with both the augmented and the original version. At the end of each game the participants were asked to fill out a questionnaire.",
+        "demo": "<picture><source media='(min-width: 32em)' srcset='assets/img/settlers/settlers_1_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/settlers/settlers_1_small.jpg'><img srcset='settlers_1_small.jpg' alt='Ingame picture'></picture><picture><source media='(min-width: 32em)' srcset='assets/img/settlers/settlers_2_large.jpg'><source media='(max-width: 32em)' srcset='assets/img/settlers/settlers_2_small.jpg'><img srcset='settlers_2_small.jpg' alt='Ingame picture'></picture>"
     }
 }
