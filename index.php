@@ -45,6 +45,7 @@ if($email != false && $message != false && $captcha != false){
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 	</noscript>
+	<link rel="shortcut icon" type="image/png" href="assets/icons/favicon_small.png"/>
 </head>
 <body>
 	<div class="index">
@@ -273,6 +274,7 @@ if($email != false && $message != false && $captcha != false){
 								<div class="clear"></div>
 							</section>
 							<section class="employment">
+								<!--
 								<h3 class="highlight">Employment</h3>
 								<p class="info">
 									While I attended the course of media and computer science I worked at the IT branch of the university's library.</br>
@@ -298,6 +300,31 @@ if($email != false && $message != false && $captcha != false){
 									<p>
 										<span class="date">2015</span>
 									</p>
+								</div>
+								-->
+								<h3 class="highlight">Skills</h3>
+								<div class="what">
+									<h5 class="uppercase">Web Design</h5>
+									<ul>
+										<li>Fluent in the major web technologies <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>JavaScript</strong></li>
+										<li>Extensive knowledge of <strong>Foundation</strong> and experience in <strong>Bootstrap</strong></li>
+										<li>Practical knowledge of <strong>Mysql</strong>, <strong>NoSql</strong> and <strong>PHP</strong></li>
+										<li>Experience with task runners like <strong>Grunt</strong> and pre-proccesors like <strong>SASS</strong></li>
+										<li>Deep understanding of <em>responsive</em> and <em>responsible</em> web design</li>
+									</ul>
+									<h5 class="uppercase">Software Engineering</h5>
+									<ul>
+										<li>Practical knowledge in <strong>JAVA</strong>, <strong>C#</strong> and <strong>Python</strong></li>
+										<li>Experience with different enviroments such as <strong>Visual Studio</strong>, <strong>Eclipse</strong> and <strong>Sublime Text</strong></li>
+										<li>Practical knowledge of language-independent <strong>design patterns</strong></li>
+										<li>Experience in development of software for external devices like the <em>Kinect</em></li>
+									</ul>
+									<h5 class="uppercase">Usability & UX Design</h5>
+									<ul>
+										<li>Knowledge of usablity <strong>practices</strong>, <strong>methods</strong> and <strong>guidelines</strong></li>
+										<li>Understanding of <strong>emotional</strong> and <strong>hedonic design</strong></li>
+										<li>Experience in working with <strong>Adobe Photoshop</strong>, <strong>Illustrator</strong> and <strong>InDesign</strong></li>
+									</ul>
 								</div>
 								<div class="clear"></div>
 							</section>
@@ -354,7 +381,7 @@ if($email != false && $message != false && $captcha != false){
 				</section>
 			</div>
 			<footer class="footer">
-				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Wilson Joseph, Blake Thompson and Don Patino</p>
+				<p class="uppercase">&#169; 2015 Constantin Lehenmeier. All rights reserved. Credits for the icons go to Wilson Joseph, Blake Thompson, Don Patino and Jonah Bethlehem</p>
 			</footer>
 		</div>
 	</div>

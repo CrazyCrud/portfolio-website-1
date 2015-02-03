@@ -35,6 +35,7 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="css/projects.css">
 	</noscript>
+	<link rel="shortcut icon" type="image/png" href="assets/icons/favicon_small.png"/>
 </head>
 <body class="animsition">
 	<div class="index projects">

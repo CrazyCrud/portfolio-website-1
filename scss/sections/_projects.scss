@@ -7,6 +7,7 @@
 	ul{
 		//margin-left: 0;
 		//padding-left: 0;
+		margin-top: 0;
 		list-style: disc;
 	}
 	line-height: $positive_4;
@@ -28,6 +29,18 @@
 		display: block;
 		overflow: hidden;
 		margin: $positive_1 auto;
+	}
+
+	h3{
+		margin-bottom: $negative_4;
+	}
+
+	h4{
+		margin-bottom: $negative_5;
+	}
+
+	h4 + p, h3 + p{
+		margin-top: 0;
 	}
 }
 

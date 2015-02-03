@@ -361,6 +361,11 @@
 
 		h5{
 			margin: $positive_1 0;
+			margin-bottom: $negative_5;
+		}
+
+		h5 + p{
+			margin-top: 0;
 		}
 
 		p{
@@ -371,6 +376,14 @@
 	.employment{
 		.info{
 			text-align: left;
+		}
+		ul{
+			list-style: disc;
+			text-align: left;
+			margin-top: 0;
+			li{
+				line-height: $positive_4;
+			}
 		}
 	}
 }
