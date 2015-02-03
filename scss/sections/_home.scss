@@ -94,7 +94,7 @@
 
 @media screen and (min-width: 58em){
 	.skills-content{
-		max-width: 70em;
+		max-width: 60em;
 		margin: 0 auto;
 		li{
 			display: block;
@@ -107,6 +107,15 @@
 		}
 	}
 }
+
+
+@media (-webkit-min-device-pixel-ratio: 1),
+	(min-resolution: 144dpi) {
+	.skills-content{
+		max-width: 70em;
+	}
+}
+
 
 .js .projects-content.load{
 	.project-1{
@@ -163,7 +172,7 @@
 .projects-content{
 	display: block;
 	width: 100%;
-	max-width: 60em;
+	max-width: 54em;
 	margin: 0 auto;
 	padding: 0;
 	a{
@@ -327,6 +336,15 @@
 		}
 	}
 }
+
+
+@media (-webkit-min-device-pixel-ratio: 1),
+	(min-resolution: 144dpi) {
+	.project-content{
+		max-width: 60em;
+	}
+}
+
 
 .about article{
 	margin: 0 auto;
