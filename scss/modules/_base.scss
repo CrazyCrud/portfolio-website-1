@@ -43,8 +43,7 @@ html{
 }
 
 
-@media (-webkit-min-device-pixel-ratio: 1),
-	(min-resolution: 144dpi) {
+@media only screen and (min-width: 1367px) {
 	html{
 		font-size: $default_font_size;
 	}
@@ -206,7 +205,7 @@ a.dest{
 	width: 90%;
 	text-align: center;
 	z-index: 2;
-	min-height: 208px;
+	min-height: 108px;
 	max-width: 1120px;
 	p{
 		line-height: $positive_5;
@@ -214,8 +213,7 @@ a.dest{
 }
 
 
-@media (-webkit-min-device-pixel-ratio: 1),
-	(min-resolution: 144dpi) {
+@media only screen and (min-width: 1367px) {
 	.header-text{
 		max-width: 1700px;
 	}

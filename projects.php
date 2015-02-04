@@ -37,27 +37,27 @@ $prev = ($project_id - 1) <= 0? $projects_max: ($project_id - 1);
 	</noscript>
 	<link rel="shortcut icon" type="image/png" href="assets/icons/favicon_small.png"/>
 </head>
-<body class="animsition">
-	<div class="index projects">
-		<div class="nav-sticky">
-			<nav class="top-bar">
-				<ul class="title-bar">
-					<li class="project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
-					<li class="toggle-nav" class="uppercase">
-						<a href="#"></a>
-					</li>
+<body>
+	<div class="nav-sticky">
+		<nav class="top-bar">
+			<ul class="title-bar">
+				<li class="project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
+				<li class="toggle-nav" class="uppercase">
+					<a href="#"></a>
+				</li>
+			</ul>
+			<section class="top-bar-section">
+				<ul>
+					<li class="top-bar-item home uppercase"><a id="link-home" class="animsition-link" href="index.php">Home</a></li>
+					<li class="top-bar-item uppercase"><a id="link-prev" class="animsition-link" href="projects.php?project=<?php echo "$prev" ?>">Prev</a></li>
+					<li class="top-bar-item project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
+					<li class="top-bar-item uppercase"><a id="link-next" class="animsition-link" href="projects.php?project=<?php echo "$next" ?>">Next</a></li>
+					<div class="clear"></div>
 				</ul>
-				<section class="top-bar-section">
-					<ul>
-						<li class="top-bar-item home uppercase"><a id="link-home" class="animsition-link" href="index.php">Home</a></li>
-						<li class="top-bar-item uppercase"><a id="link-prev" class="animsition-link" href="projects.php?project=<?php echo "$prev" ?>">Prev</a></li>
-						<li class="top-bar-item project-name-nav uppercase"><?php echo "{$project['project']['name']}" ?></li>
-						<li class="top-bar-item uppercase"><a id="link-next" class="animsition-link" href="projects.php?project=<?php echo "$next" ?>">Next</a></li>
-						<div class="clear"></div>
-					</ul>
-				</section>
-			</nav>
-		</div>
+			</section>
+		</nav>
+	</div>
+	<div id="skrollr-body" class="index projects">
 		<div class="header" data-0="background-position: 50% -6%;" data-500="background-position: 50% 6%;">
 			<div class="overlay"></div>
 			<div class="header-text">

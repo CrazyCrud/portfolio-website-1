@@ -26,26 +26,42 @@ var Home = (function(){
 
 		that.elements.link_skills.bind("tap", function(e){
 			e.preventDefault();
-			scrolling.stopAnimateTo();
-            scrolling.animateTo(that.elements.skills.offset().top - offset);
+			App.elements.body.stop();
+			App.elements.body.animate({scrollTop: that.elements.skills.offset().top - offset}, 500, 'swing', function() { 
+			   	
+			});
+			//scrolling.stopAnimateTo();
+            //scrolling.animateTo(that.elements.skills.offset().top - offset);
         });
 
 		that.elements.link_projects.bind("tap", function(e){
 			e.preventDefault();
-			scrolling.stopAnimateTo();
-            scrolling.animateTo(that.elements.projects.offset().top - offset);
+			App.elements.body.stop();
+			App.elements.body.animate({scrollTop: that.elements.projects.offset().top - offset}, 500, 'swing', function() { 
+			   	
+			});
+			//scrolling.stopAnimateTo();
+            //scrolling.animateTo(that.elements.projects.offset().top - offset);
         });
 
 		that.elements.link_about.bind("tap", function(e){
 			e.preventDefault();
-			scrolling.stopAnimateTo();
-            scrolling.animateTo(that.elements.about.offset().top- offset);
+			App.elements.body.stop();
+			App.elements.body.animate({scrollTop: that.elements.about.offset().top- offset}, 500, 'swing', function() { 
+			   	
+			});
+			//scrolling.stopAnimateTo();
+            //scrolling.animateTo(that.elements.about.offset().top- offset);
         });
 
 		that.elements.link_contact.bind("tap", function(e){
 			e.preventDefault();
-			scrolling.stopAnimateTo();
-            scrolling.animateTo(that.elements.contact.offset().top - offset);
+			App.elements.body.stop();
+			App.elements.body.animate({scrollTop: that.elements.contact.offset().top - offset}, 500, 'swing', function() { 
+			   	
+			});
+			//scrolling.stopAnimateTo();
+            //scrolling.animateTo(that.elements.contact.offset().top - offset);
         });
 		loadImages();
         activateForm();
@@ -54,15 +70,17 @@ var Home = (function(){
 
 	loadImages = function(){
 		that.elements.projects.find('.projects-content').addClass('load');
-		that.elements.projects.find('li').css('opacity', '0');
-		$(window).scroll(function(event) {
-			if($(document).scrollTop() > that.elements.projects.offset().top - 600){
-				that.elements.projects.find('li').each(function(index, el) {
-					$(this).animate({'opacity': '1'}, 1000);
-				});
-				$(window).unbind('scroll');
-			}
-		});
+		if (window.matchMedia("(min-width: 32em)").matches) {
+			that.elements.projects.find('li').css('opacity', '0');
+			$(window).scroll(function(event) {
+				if($(document).scrollTop() > that.elements.projects.offset().top - 600){
+					that.elements.projects.find('li').each(function(index, el) {
+						$(this).animate({'opacity': '1'}, 1000);
+					});
+					$(window).unbind('scroll');
+				}
+			});
+		}
 	},
 
 	activateForm = function(){

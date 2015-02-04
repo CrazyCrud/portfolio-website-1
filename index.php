@@ -48,33 +48,33 @@ if($email != false && $message != false && $captcha != false){
 	<link rel="shortcut icon" type="image/png" href="assets/icons/favicon_small.png"/>
 </head>
 <body>
-	<div class="index">
-		<div class="nav-sticky">
-			<nav class="top-bar">
-				<ul class="title-bar">
-					<li class="logo uppercase"></li>
-					<li class="toggle-nav" class="uppercase">
-						<a href="#"></a>
-					</li>
+	<div class="nav-sticky">
+		<nav class="top-bar">
+			<ul class="title-bar">
+				<li class="logo uppercase"></li>
+				<li class="toggle-nav" class="uppercase">
+					<a href="#"></a>
+				</li>
+			</ul>
+			<section class="top-bar-section">
+				<ul>
+					<li class="top-bar-item uppercase"><a id="link-skills" href="#skills">Services</a></li>
+					<li class="top-bar-item uppercase"><a id="link-projects" href="#projects">Projects</a></li>
+					<li class="top-bar-item divider"></li>
+					<li class="top-bar-item uppercase"><a id="link-about" href="#about">About</a></li>
+					<li class="top-bar-item uppercase"><a id="link-contact" href="#contact">Contact</a></li>
+					<div class="clear"></div>
 				</ul>
-				<section class="top-bar-section">
-					<ul>
-						<li class="top-bar-item uppercase"><a id="link-skills" href="#skills">Services</a></li>
-						<li class="top-bar-item uppercase"><a id="link-projects" href="#projects">Projects</a></li>
-						<li class="top-bar-item divider"></li>
-						<li class="top-bar-item uppercase"><a id="link-about" href="#about">About</a></li>
-						<li class="top-bar-item uppercase"><a id="link-contact" href="#contact">Contact</a></li>
-						<div class="clear"></div>
-					</ul>
-				</section>
-			</nav>
-		</div>
+			</section>
+		</nav>
+	</div>
+	<div id="skrollr-body" class="index">
 		<div class="header" data-0="background-position: 50% -6%;" data-500="background-position: 50% 6%;">
 			<div class="overlay"></div>
 			<div class="header-text">
 				<h2>Hello!</h2>
 				<p class="uppercase">
-					My Name is <span class="primary-light">Constantin Lehenmeier</span>, I&#39;m a web enthusiast and a daily programmer from Germany.
+					My Name is <span class="primary-light">Constantin Lehenmeier</span>, I&#39;m a pixel pusher and a daily programmer from Germany.
 					</br>And I make cool shit for cool people!
 				</p>			
 			</div>
@@ -261,8 +261,8 @@ if($email != false && $message != false && $captcha != false){
 									<h5 class="uppercase">Academic Studies in Media and Computer Science</h5>
 									<p>
 										In the terms of my study in Ratisbon, Germany I received an extensive as well as far-reaching teaching in the field of the human-computer-interaction.
-										I aquired knowledge and pratical skills in working areas like <strong>interaction design</strong>, <strong>media development</strong> and <strong>software development</strong>.
-										</br>Also I was teached in the basics of <strong>project management</strong> and learned about ways to tackle problems and obstacles.
+										I aquired knowledge and skills in working areas like <strong>interaction design</strong>, <strong>media</strong> and <strong>software development</strong>.
+										</br>Also I was teached in the basics of <strong>project management</strong> and learned about ways to tackle obstacles.
 										I learned to work and communicate with other people and developed a love-hate relationship with my laptop. 
 									</p>
 								</div>
@@ -310,14 +310,12 @@ if($email != false && $message != false && $captcha != false){
 										<li>Extensive knowledge of <strong>Foundation</strong> and experience in <strong>Bootstrap</strong></li>
 										<li>Practical knowledge of <strong>Mysql</strong>, <strong>NoSql</strong> and <strong>PHP</strong></li>
 										<li>Experience with task runners like <strong>Grunt</strong> and pre-proccesors like <strong>SASS</strong></li>
-										<li>Deep understanding of <em>responsive</em> and <em>responsible</em> web design</li>
 									</ul>
 									<h5 class="uppercase">Software Engineering</h5>
 									<ul>
 										<li>Practical knowledge in <strong>JAVA</strong>, <strong>C#</strong> and <strong>Python</strong></li>
 										<li>Experience with different enviroments such as <strong>Visual Studio</strong>, <strong>Eclipse</strong> and <strong>Sublime Text</strong></li>
 										<li>Practical knowledge of language-independent <strong>design patterns</strong></li>
-										<li>Experience in development of software for external devices like the <em>Kinect</em></li>
 									</ul>
 									<h5 class="uppercase">Usability & UX Design</h5>
 									<ul>

@@ -15,16 +15,40 @@
 
 .headline{
 	display: block;
-	margin-top: -40px;
-	font-size: $positive_6;
+	margin-top: -20px;
+	font-size: $positive_3;
 	font-family: $script;
 	font-weight: 400; 
 	font-style: normal;
 	color: $primary_light;
 }
 
+.about{
+	.headline{
+		margin-top: -10px;
+	}
+}
+
 .skills, .about, .contact{
 	padding: 0 $positive_1;
+}
+
+.skills, .about, .contact, .projects{
+	h3 {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: $header_medium){
+	.headline{
+		font-size: $positive_6;
+		margin-top: -40px;
+	}
+	.about{
+		.headline{
+			margin-top: -30px;
+		}
+	}
 }
 
 @media screen and (min-width: 54em){
@@ -109,8 +133,7 @@
 }
 
 
-@media (-webkit-min-device-pixel-ratio: 1),
-	(min-resolution: 144dpi) {
+@media only screen and (min-width: 1367px) {
 	.skills-content{
 		max-width: 70em;
 	}
@@ -338,10 +361,10 @@
 }
 
 
-@media (-webkit-min-device-pixel-ratio: 1),
-	(min-resolution: 144dpi) {
+@media only screen and (min-width: 1367px) {
 	.project-content{
 		max-width: 60em;
+		font-size: 18px;
 	}
 }
 
@@ -360,7 +383,7 @@
 		margin-bottom: $positive_4; 
 
 		h5{
-			margin: $positive_1 0;
+			margin: $positive_4 0;
 			margin-bottom: $negative_5;
 		}
 
@@ -369,7 +392,7 @@
 		}
 
 		p{
-			line-height: $positive_4;
+			line-height: $positive_6;
 		}
 	}
 
@@ -381,8 +404,20 @@
 			list-style: disc;
 			text-align: left;
 			margin-top: 0;
+			padding-left: $positive_1;
 			li{
-				line-height: $positive_4;
+				line-height: $positive_6;
+
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 32em){
+	.about-content-container{
+		.employment{
+			ul{
+				padding-left: $positive_4;
 			}
 		}
 	}
@@ -474,6 +509,10 @@
 		border-bottom: 2px solid rgba(150, 150, 150, 0.2); 
 		font-size: $positive_2;
 		transition: background-color 0.2s;
+	}
+
+	#message{
+		resize: vertical;
 	}
 
 	#number-1, #number-2{
