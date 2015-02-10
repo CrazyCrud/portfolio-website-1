@@ -5,7 +5,7 @@ include_once 'php/default.inc.php';
 $email = $message = $captcha = false;
 if(isset($_POST['email']) && !empty($_POST['email'])){
 	$email = htmlentities($_POST['email']);
-	if(!((strpos($email, ".") > 0) && (strpos($email, "@") > 0)) || preg_match("/[^a-zA-Z0-9.@_-]/", $email)){
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 		$email = false;
 	}
 }
@@ -15,13 +15,14 @@ if(isset($_POST['message']) && !empty($_POST['message'])){
 }
 
 if(isset($_POST['captcha']) && !empty($_POST['captcha'])){
-	if(intval($_POST['number-1']) + intval($_POST['number-2']) == intval($total)){
+	if(intval($_POST['number-1']) + intval($_POST['number-2']) == intval($_POST['captcha'])){
 		$captcha = true;
 	}
 }
 
 if($email != false && $message != false && $captcha != false){
-	mail($me, "Portfolio - Request", $message, null, "-f".$email); 
+	$message = "Von $email \n".$message;
+	mail($me, "Portfolio - Request", $message, null, "-f ".$email); 
 }
 
 ?>
@@ -45,7 +46,7 @@ if($email != false && $message != false && $captcha != false){
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 	</noscript>
-	<link rel="shortcut icon" type="image/png" href="assets/icons/favicon_small.png"/>
+	<link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjhDQTcyNzZBQkNBMTFFNDhBNTFGRTkyRkExNUYyRkQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjhDQTcyNzdBQkNBMTFFNDhBNTFGRTkyRkExNUYyRkQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyOENBNzI3NEFCQ0ExMUU0OEE1MUZFOTJGQTE1RjJGRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyOENBNzI3NUFCQ0ExMUU0OEE1MUZFOTJGQTE1RjJGRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvx1p6oAAAGkUExURQAAAISEhI6Ojqampr29va2trbS0tNnZ2WFhYZiYmIODg3Jycvr6+nZ2dtXV1Xt7e7e3t5CQkNDQ0PPz84yMjIqKipKSkmJiYomJiVtbW8vLy0ZGRru7u9vb26urq319fdjY2IGBgYCAgJWVlV5eXllZWfn5+YKCgrq6usrKyurq6ktLS/z8/IiIiPv7+3x8fMDAwLi4uIaGhmBgYJaWlldXV6mpqe/v76KioqCgoOvr6yIiIoWFhbm5uX9/f+Pj4/X19cnJyeHh4fDw8M/Pz8HBweTk5O3t7Ts7O6+vr56enk9PT5qamszMzM3NzRAQEKenp25ubqioqBwcHHp6ej09PUhISERERO7u7tPT01FRUWxsbMbGxpeXl66ursLCwlJSUlxcXDo6OmNjY05OTlVVVfT09FpaWsfHx+zs7JGRkaOjo+fn59LS0o2Njby8vLCwsG1tbaysrJubmxUVFYeHhzw8PEdHR/b29nh4eCMjI6GhoWlpaebm5vj4+ExMTLKysuDg4FBQUOnp6ff393R0dJ2dndzc3MPDwzExMWRkZP///2A1tnoAAACMdFJOU/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AcRYuAwAAAZBJREFUeNqE0+VXwzAQAPDMO3dBJ8DcGLbh7u7u7u7ucP80HbRr0xbIh7xL7/fykksPwT8DseKr4r/BM1ESZFbSOA/IU71lmcXs/JSXCzosoBVT8WAXlO5xgcEK9aG2n81CYVDKuCAeAbgvsqokQclyBQiAiwQ55fUcqvTD42QkluJAtyaKYvdz32DAkfWO3/9Jj11T/8Kr0EADCyg+wTtnxkGunQWuu6EYxb7DSg0tliQZoCAAalB5OjSNVu1QYFpLg42CI4Db7e+8MwfZ6S2cCgrIRTr6W4X/9C5zCls+BV5FAAVnWRPce/QrKWBUgQKR44EDDGIKiMkd2hG61HBALg2UJNg/TvBKJbNRoNxXJ/g7liYpoLPK4QMtknVxyZpYIBagCyVVg7RsqM+uztGGmXz2AVPqFX96NuOvUZhkQPYk/wSSQvZzG0u4edNYJfbDuAk8vz7i4vRF52MLk9ZUFzXyOiuPUOe3poNowLZgFOzN5kit78Qh8nhSq8LNC29bmxbL7ozh/JfuFhxfAgwAl8HWGEZ39hYAAAAASUVORK5CYII="/>
 </head>
 <body>
 	<div class="nav-sticky">
@@ -88,7 +89,7 @@ if($email != false && $message != false && $captcha != false){
 							<div class="line"></div>
 							<h2>
 								My
-								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Services</span>
+								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.125) rotate(-6deg);">Services</span>
 							</h2>
 						</header>
 						<div class="skills-content-container">
@@ -144,7 +145,7 @@ if($email != false && $message != false && $captcha != false){
 							<div class="line"></div>
 							<h2>
 								My
-								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Projects</span>
+								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.125) rotate(-6deg);">Projects</span>
 							</h2>
 						</header>
 						<div class="projects-content-container">
@@ -240,7 +241,7 @@ if($email != false && $message != false && $captcha != false){
 							<div class="line"></div>
 							<h2>
 								My
-								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.2) rotate(-6deg);">Self &#38; I</span>
+								<span class="headline" data-0="transform: scale(1) rotate(-8deg);" data-top="transform: scale(1.125) rotate(-6deg);">Self &#38; I</span>
 							</h2>
 						</header>
 						<div class="about-content-container">

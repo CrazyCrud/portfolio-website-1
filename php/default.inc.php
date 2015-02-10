@@ -1,5 +1,5 @@
 <?php
 
-$me = "thefunkytaliban@googlemail.com";
+$me = "info@constantinlehenmeier.de";
 
 ?>

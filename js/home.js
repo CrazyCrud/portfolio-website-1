@@ -253,7 +253,7 @@ App.init();;var Home = (function(){
 	activateForm = function(){
 		that.elements.submit_form.bind("tap", function(e){
 			e.preventDefault();
-			var email = that.email_regex.test($.trim(that.elements.email_form.val()));
+			var email = $.trim(that.elements.email_form.val());
 			var message = $.trim(that.elements.message_form.val());
 			var number_1 = that.elements.number_1.val();
 			var number_2 = that.elements.number_2.val();
@@ -265,13 +265,15 @@ App.init();;var Home = (function(){
 			if(validMail && validMessage && validCaptcha){
 				that.elements.submit_form.addClass('success');
 				that.elements.submit_form.children('.response').html('Success');
+				console.log(email);
 				$.ajax({
 					url: 'php/send_mail.php',
 					type: 'POST',
 					dataType: 'json',
 					data: 'email=' + email + '&message=' + message + '&number-1=' + number_1 + '&number-2=' + number_2 + '&captcha=' + captcha
 				})
-				.always(function(reponse) {
+				.always(function(response) {
+					console.log(response);
 					that.elements.submit_form.addClass('disabled');
 					that.elements.submit_form.unbind('tap');
 					that.elements.submit_form.bind("tap", function(e){
@@ -290,7 +292,7 @@ App.init();;var Home = (function(){
 	},
 
 	isValidMail = function(email){
-		var valid = email;
+		var valid = that.email_regex.test(email);
 		if(valid === true){
 			that.elements.email_form.prev('.required-error').remove();
 		}else{

@@ -139,6 +139,10 @@
 	}
 }
 
+.projects{
+	font-size: 18px;
+}
+
 
 .js .projects-content.load{
 	.project-1{
@@ -362,9 +366,11 @@
 
 
 @media only screen and (min-width: 1367px) {
+	.projects{
+		font-size: $default_font_size;
+	}
 	.project-content{
 		max-width: 60em;
-		font-size: 18px;
 	}
 }
 
