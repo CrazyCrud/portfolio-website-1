@@ -71,6 +71,7 @@ var Home = (function(){
 	loadImages = function(){
 		that.elements.projects.find('.projects-content').addClass('load');
 		if (window.matchMedia("(min-width: 32em)").matches) {
+			/*
 			that.elements.projects.find('li').css('opacity', '0');
 			$(window).scroll(function(event) {
 				if($(document).scrollTop() > that.elements.projects.offset().top - 600){
@@ -80,6 +81,7 @@ var Home = (function(){
 					$(window).unbind('scroll');
 				}
 			});
+			*/
 		}
 	},
 

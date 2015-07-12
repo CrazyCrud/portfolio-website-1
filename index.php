@@ -70,12 +70,12 @@ if($email != false && $message != false && $captcha != false){
 		</nav>
 	</div>
 	<div id="skrollr-body" class="index">
-		<div class="header" data-0="background-position: 50% -6%;" data-500="background-position: 50% 6%;">
+		<div class="header" data-0="background-position: 30% -6%;" data-500="background-position: 30% 6%;">
 			<div class="overlay"></div>
 			<div class="header-text">
 				<h2>Hello!</h2>
 				<p class="uppercase">
-					My Name is <span class="primary-light">Constantin Lehenmeier</span>, I&#39;m a pixel pusher and a daily programmer from Germany.
+					My Name is <span class="primary-light">Constantin Lehenmeier</span>, I&#39;m a pixel pusher and daily programmer from Germany.
 					</br>And I make cool shit for cool people!
 				</p>			
 			</div>
@@ -126,7 +126,7 @@ if($email != false && $message != false && $captcha != false){
 									<div class="skill-text-container">
 										<h3>Coding</h3>
 										<p>
-											Working with new technologies like the <em>Kinect</em> or the <em>Wii</em>, I developed skills in lagnuages like <strong>Java</strong>, <strong>C#</strong> and <strong>Python</strong>.
+											Working with new technologies like the <em>Kinect</em> or the <em>Wii</em>, I developed skills in languages like <strong>Java</strong>, <strong>C#</strong> and <strong>Python</strong>.
 											Also I'm trained in frontend and backend <strong>web design and development</strong>.
 										</p>
 									</div>

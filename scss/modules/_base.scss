@@ -142,10 +142,12 @@ a.dest{
 	margin-bottom: $positive_4;
 	padding: $positive_10 0 $positive_8 0;
 	font-size: 1rem;
-	background: url('img/header_small.png') center -6% no-repeat fixed;
+	background: url('img/header_599.png') left top no-repeat fixed;
 	z-index: 1;
 	overflow: hidden;
 	color: white;
+	min-height: 166.375px;
+	background-position: 0% 0%;
 }
 
 .line{
@@ -160,15 +162,53 @@ a.dest{
 	z-index: -1;
 }
 
-@media screen and (min-width: $header_medium){
+@media screen and (min-width: 400px){
 	.header{
-		background: url('img/header_large.png') center -6% no-repeat fixed;
+		//background: url('img/header_large.png') center -6% no-repeat fixed;
+		background: url('img/header_599.png') left top no-repeat fixed;
+		background-position: left top;
 	}
-
 	.line{
 		width: 100%;
 	}
 }
+
+@media screen and (min-width: 599px){
+	.header{
+		//background: url('img/header_large.png') center -6% no-repeat fixed;
+		background: url('img/header_960.png') left top no-repeat fixed;
+	}
+	.line{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.header{
+		//background: url('img/header_large.png') center -6% no-repeat fixed;
+		background: url('img/header_1200.png') left top no-repeat fixed;
+		//background: url('img/header_960.png') left top no-repeat fixed;
+	}
+	
+}
+
+@media screen and (min-width: 1200px){
+	.header{
+		//background: url('img/header_large.png') center -6% no-repeat fixed;
+		background: url('img/header_1600_2.png') left top no-repeat fixed;
+		
+	}
+}
+
+@media screen and (min-width: 1600px){
+	.header{
+		//background: url('img/header_large.png') center -6% no-repeat fixed;
+		background: url('img/header_2000.png') left top no-repeat fixed;
+		
+	}
+}
+
+
 
 @media screen and (min-width: $skills_breakpoint){
 	.header{
