@@ -174,16 +174,16 @@ if($email != false && $message != false && $captcha != false){
 										<span class="project-caption uppercase">Augmented Reality</span>
 									</li>
 								</a>
-								<a href="projects.php?project=3">
+								<a href="projects.php?project=6">
 									<li class="project-3">
 										<span class="project-overlay"></span>
 										<div class="project-description">
-											<h3 class="project-titel uppercase">Beliar</h3>
+											<h3 class="project-titel uppercase">Demo Project</h3>
 											<p>
-												A prototyp of a <em>Dungeon&Dragons</em> inspired singleplayer game
+												An attempt to implement a specified site design
 											</p>
 										</div>
-										<span class="project-caption uppercase">Game Development</span>
+										<span class="project-caption uppercase">Webdesign</span>
 									</li>
 								</a>
 								<a href="projects.php?project=4">
@@ -222,13 +222,24 @@ if($email != false && $message != false && $captcha != false){
 										<span class="project-caption uppercase"></span>
 									</li>
 								</a>
-								<div class="clear"></div>
-								<!--
-								<p class="github"><span class="uppercase highlight">Chin check out some code</span>You can also check the code of some of these projects and other minor projects and works including this portfolio site on my <span class="primary-light"><a href="https://github.com/CrazyCrud"><strong>GitHub</strong></a></span> account!
-									</br><span class="icon-github"></span>
-								</p>
-								-->
+								<div class="clear"></div>						
 							</ul>
+							<div class="more-projects">
+									<!--<h5>And here are some minor projects I have done in my spare time:</h5>-->
+									<ul>
+										<li>
+											A <span class="primary-light"><a href="https://projects.invisionapp.com/share/QA686E9MY#/screens/138668543" target="_blank">redesign</a></span> of the product page of <a href="https://play.google.com/store/apps/details?id=de.zipcart&hl=de">Zalando's ZipCart app</a>
+										</li>
+										<li>
+											A <span class="primary-light"><a href="https://chrome.google.com/webstore/detail/watch-doge/mockgfbbicpeebdpakillhameihbkngf?hl=de" target="_blank">chrome extension</a></span>  which keeps track of episodes of tv shows and reminds you of upcoming episodes
+										</li>
+										<!--
+										<li>
+											Chin check my <span class="primary-light"><a href="https://github.com/CrazyCrud">GitHub</a></span> account
+										</li>
+									-->
+									</ul>
+								</div>	
 						</div>
 					</article>
 				</section>
@@ -305,24 +316,36 @@ if($email != false && $message != false && $captcha != false){
 								-->
 								<h3 class="highlight">Skills</h3>
 								<div class="what">
+									<h5 class="uppercase">Usability & UX Design</h5>
+									<ul>
+										<li>Know-how in <strong>user research</strong> including
+										interviews, observations, focus groups and
+										surveys</li>
+										<li>Experience in the <strong>design</strong> and the
+conceptualization of a product including the
+creation of user stories, use cases, user
+scenarios and wireframes</li>
+										<li>Practical knowledge in product evaluation and
+<strong>usability testing</strong> as well as in the statistical
+analysis of aggregated data</li>
+										<li>Knowledge of <strong>Emotional Design</strong> and it’s
+realization in the development process</li>
+										<li>Experience in working with <strong>Adobe Photoshop</strong>, <strong>Illustrator</strong>, <strong>InDesign</strong>, <strong>Balsamiq</strong> and <strong>Axure</strong></li>
+									</ul>
 									<h5 class="uppercase">Web Design</h5>
 									<ul>
-										<li>Fluent in the major web technologies <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>JavaScript</strong></li>
+										<li>Fluent in the major web technologies <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>JavaScript (jQuery)</strong></li>
 										<li>Extensive knowledge of <strong>Foundation</strong> and experience in <strong>Bootstrap</strong></li>
 										<li>Practical knowledge of <strong>Mysql</strong>, <strong>NoSql</strong> and <strong>PHP</strong></li>
 										<li>Experience with task runners like <strong>Grunt</strong> and pre-proccesors like <strong>SASS</strong></li>
 									</ul>
-									<h5 class="uppercase">Software Engineering</h5>
+									<h5 class="uppercase">Software Engineering &#38; Project Management</h5>
 									<ul>
-										<li>Practical knowledge in <strong>JAVA</strong>, <strong>C#</strong> and <strong>Python</strong></li>
-										<li>Experience with different enviroments such as <strong>Visual Studio</strong>, <strong>Eclipse</strong> and <strong>Sublime Text</strong></li>
-										<li>Practical knowledge of language-independent <strong>design patterns</strong></li>
-									</ul>
-									<h5 class="uppercase">Usability & UX Design</h5>
-									<ul>
-										<li>Knowledge of usablity <strong>practices</strong>, <strong>methods</strong> and <strong>guidelines</strong></li>
-										<li>Understanding of <strong>emotional</strong> and <strong>hedonic design</strong></li>
-										<li>Experience in working with <strong>Adobe Photoshop</strong>, <strong>Illustrator</strong> and <strong>InDesign</strong></li>
+										<li>Practical knowledge in <strong>JAVA</strong>, <strong>C#</strong>, <strong>Python</strong> and <strong>C++</strong></li>
+										<li>Experience in <strong>GIT</strong></li>
+										<li>Experience in <strong>agile product development</strong>
+(Scrum)</li>
+										
 									</ul>
 								</div>
 								<div class="clear"></div>

@@ -1,0 +1,12 @@
+{
+    "project": {
+        "name": "Web Desgin Demo Project",
+        "goal": "The goal of this project was to implement the specified design which you can find <a href='https://dl.dropboxusercontent.com/u/37133270/demp-project-1.jpg' target='_blank'>here</a>. This single page site should be responsive with a view to high performance.",
+        "summary": "An Attempt to Implement a Specified <span class='primary-light'>Design</span>",
+        "date": "2014",
+        "header-image": ["small", "large"],
+        "functionality": "The site is responsive, the form gets validated and the images of the team members have an hover effect displaying more information.",
+        "process": "<h4>Implementation</h4><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Grunt</li>",
+        "demo": "<a href='http://seoul-way-7442.pancakeapps.com/' target='_blank'>Visit the website!</a>"
+    }
+}

@@ -29,7 +29,25 @@
 	}
 }
 
-.skills, .about, .contact{
+.more-projects{
+	margin: 0 auto;
+	padding: 0;
+	h5{
+		margin-bottom: 1em;
+	}
+	a{
+		color: inherit;
+	}
+	ul{
+		margin-top: $positive_8;
+		list-style: initial;
+		li{
+			line-height: 1.45em;
+		}
+	}
+}
+
+.skills, .about, .contact, .more-projects{
 	padding: 0 $positive_1;
 }
 
@@ -52,7 +70,7 @@
 }
 
 @media screen and (min-width: 54em){
-	.skills, .about, .contact{
+	.skills, .about, .contact, .more-projects{
 		padding: 0 $positive_4;
 	}
 }
@@ -132,6 +150,14 @@
 	}
 }
 
+@media screen and (min-width: 58em){
+	.more-projects{
+		max-width: 54em;
+		li{
+			//max-width: 50em;
+		}
+	}
+}
 
 @media only screen and (min-width: 1367px) {
 	.skills-content{
@@ -154,7 +180,8 @@
 	}
 
 	.project-3{
-		background: url('img/beliar.jpg') left top no-repeat scroll;
+		//background: url('img/beliar.jpg') left top no-repeat scroll;
+		background: url('img/demo-project-1.jpg') left top no-repeat scroll;
 	}
 
 	.project-4{
@@ -180,7 +207,8 @@
 	}
 
 	.project-3{
-		background: url('img/beliar.jpg') left top no-repeat scroll;
+		//background: url('img/beliar.jpg') left top no-repeat scroll;
+		background: url('img/demo-project-1.jpg') left top no-repeat scroll;
 	}
 
 	.project-4{
@@ -285,6 +313,9 @@
 		margin-top: $positive_7;
 		line-height: $positive_3;
 		padding: 0 $positive_1;
+		ul{
+			list-style: circle;
+		}
 		.icon-github{
 			width: 56px;
 			height: 56px;
@@ -302,6 +333,8 @@
 			line-height: $positive_4; 
 		}
 	}
+
+
 }
 
 @media screen and (min-width: $navigation_breakpoint){
